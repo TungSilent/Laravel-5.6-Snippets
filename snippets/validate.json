@@ -2,7 +2,7 @@
     "Validate": {
     "prefix": "Request::Validate",
     "body": [
-        "$this->validate($request,",
+        "/$this->validate($request,",
         "[",
         "    'txtUser' => 'required',",
         "    'txtPass' => 'required',",
