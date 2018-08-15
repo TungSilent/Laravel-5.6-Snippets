@@ -1,0 +1,21 @@
+{
+    "Validate": {
+    "prefix": "Request::Validate",
+    "body": [
+        "$this->validate($request,",
+        "[",
+        "    'txtUser' => 'required',",
+        "    'txtPass' => 'required',",
+        "],",
+        "[",
+        "    'required'=> ':attribute field is required',",
+        "],",
+        "[",
+        "    'txtUser'=>'Username',",
+        "    'txtPass'=>'Password',",
+
+        "]);"
+    ],
+    "description": "With Error Messages."
+}
+}

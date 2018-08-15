@@ -1,165 +1,249 @@
 {
-    "Route-any.sublime-snippet": {
-        "prefix": "Route::any",
+    "Route-basic Laravel 5.6 ": {
+        "prefix": "Route::get-basic",
         "body": [
-            "Route::any('${2:users/{id\\}}', function (${3:\\$id}) {",
-            "    $4",
+            "Route::get('foo', function () {",
+            "    return 'Hello World';",
             "});"
         ],
         "description": "Basic Route with Closure."
     },
-    "Route-closure.sublime-snippet": {
-        "prefix": "Route::closure",
-        "body": [
-            "Route::${1:get}('${2:users/{id\\}}', function (${3:\\$id}) {",
-            "    $4",
-            "});"
-        ],
-        "description": "Basic Route with Closure."
-    },
-    "Route-controller.sublime-snippet": {
-        "prefix": "Route::controller",
-        "body": [
-            "Route::controller('${1:users}', '${2:UserController}');"
-        ],
-        "description": "Route a controller to a URI with wildcard routing."
-    },
-    "Route-controllerAction.sublime-snippet": {
-        "prefix": "Route::controllerAction",
-        "body": [
-            "Route::${1:get}('${2:users/{id\\}}', '${3:$UserController@profile}');"
-        ],
-        "description": "Basic route to a controller action."
-    },
-    "Route-currentRouteAction.sublime-snippet": {
-        "prefix": "Route::currentRouteAction",
-        "body": [
-            "Route::currentRouteAction();"
-        ],
-        "description": "Get the current route name."
-    },
-    "Route-delete.sublime-snippet": {
-        "prefix": "Route::delete",
-        "body": [
-            "Route::delete('${1:users/{id\\}}', function (${2:\\$id}) {",
-            "    $3",
-            "});"
-        ],
-        "description": "Basic Delete Route."
-    },
-    "Route-get.sublime-snippet": {
+    "Route-get Laravel 5.6 ": {
         "prefix": "Route::get",
         "body": [
-            "Route::get('${1:users/{id\\}}', function (${2:\\$id}) {",
-            "    $3",
-            "});"
+            "Route::get('/user', 'UserController@index');"
         ],
-        "description": "Basic Get Route."
+        "description": "Basic Route with Closure."
     },
-    "Route-get-function-name.sublime-snippet": {
-        "prefix": "Route::get-function-name",
+    "Route-get-uri Laravel 5.6 ": {
+        "prefix": "Route::get-uri",
         "body": [
-            "Route::get('${1:users/profile}', function (${2:\\$id}) {",
-            "    $3",
-            "})->name('profile');"
+            "Route::get($uri, $callback);"
         ],
-        "description": "Basic Get Route."
+        "description": "Available Router Methods."
     },
-    "Route-get-name.sublime-snippet": {
-        "prefix": "Route::get-name",
+    "Route-post-uri Laravel 5.6 ": {
+        "prefix": "Route::post-uri",
         "body": [
-            "Route::get('${1:users/profile}', 'UserProfileController@show')->name('profile');"
+            "Route::post($uri, $callback);"
         ],
-        "description": "Basic Get Route."
+        "description": "Available Router Methods."
     },
-    "Route-get-controller.sublime-snippet": {
-        "prefix": "Route::get-controller-name",
+    "Route-put-uri Laravel 5.6 ": {
+        "prefix": "Route::put-uri",
         "body": [
-            "Route::get('${1:users/{id\\}}', 'UserProfileController@show')->name('profile');"
+            "Route::put($uri, $callback);"
         ],
-        "description": "Basic Get Route."
+        "description": "Available Router Methods."
     },
-    "Router-post.sublime-snippet": {
-        "prefix": "Route::post",
+    "Route-patch-uri Laravel 5.6 ": {
+        "prefix": "Route::patch-uri",
         "body": [
-            "Route::post('${1:users/{id\\}}', function (${2:\\$id}) {",
-            "    $3",
-            "});"
+            "Route::patch($uri, $callback);"
         ],
-        "description": "Basic Post Route."
+        "description": "Available Router Methods."
     },
-    "Route-group.sublime-snippet": {
-        "prefix": "Route::group",
+    "Route-delete-uri Laravel 5.6 ": {
+        "prefix": "Route::delete-uri",
         "body": [
-            "Route::group(${1:['${2:prefix}' => '${3:admin}']}, function () {",
-            "    $4",
-            "});"
+            "Route::delete($uri, $callback);"
         ],
-        "description": "Create a Group of Routes"
+        "description": "Available Router Methods."
     },
-    "Route-group-middleware": {
-        "prefix": "Route::group-middleware",
+    "Route-options-uri Laravel 5.6 ": {
+        "prefix": "Route::options-uri",
         "body": [
-            "Route::group(['middleware' => ['${1:groupName}']], function () {",
-            "    $2",
-            "});"
+            "Route::options($uri, $callback);"
         ],
-        "description": "Create a Group of Routers with middleware defined in RouteServiceProvider"
+        "description": "Available Router Methods."
     },
-    "Route-match.sublime-snippet": {
+    "Route-match Laravel 5.6 ": {
         "prefix": "Route::match",
         "body": [
-            "Route::match([${1:'get', 'post'}], '${2:/user/profile}', function () {",
-            "    $3",
+            "Route::match(['get', 'post'], '/', function () {",
+            "    //",
             "});"
         ],
-        "description": "Register a new route with the given verbs."
+        "description": "Available Router Methods."
     },
-    "Route-put.sublime-snippet": {
-        "prefix": "Route::put",
+    "Route-any Laravel 5.6 ": {
+        "prefix": "Route::any",
         "body": [
-            "Route::put('${1:users/{id\\}}', function (${2:\\$id}) {",
-            "    $3",
-            "});"
+           " Route::any('foo', function () {",
+           "     //",
+           " });"
         ],
-        "description": "Basic Put Route."
+        "description": "Available Router Methods."
     },
-    "Route-resource.sublime-snippet": {
-        "prefix": "Route::resource",
-        "body": [
-            "Route::resource('${1:user}', '${2:UserController}');"
-        ],
-        "description": "Route to a RESTful Controller"
-    },
-    "Route-when.sublime-snippet": {
-        "prefix": "Route::when",
-        "body": [
-            "\\$router->when('${1:admin/*}', '${2:admin}', ${3:['post']})$4"
-        ],
-        "description": "Pattern based filters on routes"
-    },
-    "Router-model.sublime-snippet": {
-        "prefix": "Route::model",
-        "body": [
-            "\\$router->model('${1:user}', '${2:App\\User}')$3"
-        ],
-        "description": "Register a model binder for a wildcard."
-    },
-    "Router-pattern.sublime-snippet": {
-        "prefix": "Route::pattern",
-        "body": [
-            "\\$router->pattern('${1:id}', '${2:[0-9]+}')$3"
-        ],
-        "description": "Set a global where pattern on all routes."
-    },
-    "Route-redirect": {
+    "Route-redirect Laravel 5.6 ": {
         "prefix": "Route::redirect",
-        "body": "Route::redirect('${1:URI}', '${2:URI}', ${3:301});",
-        "description": "a convenient shortcut for performing a simple redirect"
+        "body": [
+            "Route::redirect('/here', '/there', 301);"
+        ],
+        "description": "Redirect Routes."
     },
-    "Route-view": {
+    "Route-view Laravel 5.6 ": {
         "prefix": "Route::view",
-        "body": "Route::view('${1:URI}', '${2:viewName}');",
-        "description": "route only needs to return a view; you may provide an array of data to pass to the view as an optional third argument"
+        "body": [
+            "Route::view('/welcome', 'welcome');"
+        ],
+        "description": "View Routes."
+    },
+    "Route-view-name Laravel 5.6 ": {
+        "prefix": "Route::view-name",
+        "body": [
+            "Route::view('/welcome', 'welcome', ['name' => 'Taylor']);"
+        ],
+        "description": "View Routes."
+    },
+    "Route-get-id Laravel 5.6 ": {
+        "prefix": "Route::get-id",
+        "body": [
+            "Route::get('user/{id}', function ($id) {",
+            "    return 'User '.$id;",
+            "});"
+        ],
+        "description": "Required Parameters."
+    },
+    "Route-get-post-comment Laravel 5.6 ": {
+        "prefix": "Route::get-post-comment",
+        "body": [
+           " Route::get('posts/{post}/comments/{comment}', function ($postId, $commentId) {",
+           "     //",
+           " });"
+        ],
+        "description": "Required Parameters."
+    },
+    "Route-get-null Laravel 5.6 ": {
+        "prefix": "Route::get-null",
+        "body": [
+            "Route::get('user/{name?}', function ($name = null) {",
+            "    return $name;",
+            "});"
+        ],
+        "description": "Optional Parameters."
+    },
+    "Route-get-where-name Laravel 5.6 ": {
+        "prefix": "Route::get-where-name",
+        "body": [
+            "Route::get('user/{name}', function ($name) {",
+            "    //",
+            "})->where('name', '[A-Za-z]+');"
+        ],
+        "description": "Regular Expression Constraints."
+    },
+    "Route-get-where-id Laravel 5.6 ": {
+        "prefix": "Route::get-where-id",
+        "body": [
+            "Route::get('user/{id}', function ($id) {",
+            "    //",
+            "})->where('id', '[0-9]+');"
+        ],
+        "description": "Regular Expression Constraints."
+    },
+    "Route-get-where-name-id Laravel 5.6 ": {
+        "prefix": "Route::get-where-name-id",
+        "body": [
+            "Route::get('user/{id}/{name}', function ($id, $name) {",
+            "    //",
+            "})->where(['id' => '[0-9]+', 'name' => '[a-z]+']);"
+        ],
+        "description": "Regular Expression Constraints."
+    },
+    "Route-get-name Laravel 5.6 ": {
+        "prefix": "Route::get-name",
+        "body": [
+            "Route::get('user/profile', function () {",
+            "    //",
+            "})->name('profile');"
+        ],
+        "description": "Named Routes."
+    },
+    "Route-get-Controller-name Laravel 5.6 ": {
+        "prefix": "Route::get-Controller-name",
+        "body": [
+            "Route::get('user/profile', 'UserProfileController@show')->name('profile');"
+        ],
+        "description": "Named Routes."
+    },
+    "Route-post-Controller-name Laravel 5.6 ": {
+        "prefix": "Route::post-Controller-name",
+        "body": [
+            "Route::post('user/profile', 'UserProfileController@show')->name('profile');"
+        ],
+        "description": "Named Routes."
+    },
+    "Route-return-redirect Laravel 5.6 ": {
+        "prefix": "Route::return-redirect",
+        "body": [
+            "return redirect()->route('profile');"
+        ],
+        "description": "Generating URLs To Named Routes."
+    },
+    "Route-get-id-name Laravel 5.6 ": {
+        "prefix": "Route::get-id-name",
+        "body": [
+            "Route::get('user/{id}/profile', function ($id) {",
+            "    //",
+            "})->name('profile');"
+        ],
+        "description": "Generating URLs To Named Routes."
+    },
+    "Route-middleware Laravel 5.6 ": {
+        "prefix": "Route::middleware",
+        "body": [
+            "Route::middleware(['first', 'second'])->group(function () {",
+                "Route::get('/', function () {",
+                "    // Uses first & second Middleware",
+                "});",
+            
+                "Route::get('user/profile', function () {",
+                "    // Uses first & second Middleware",
+                "});",
+            "});"
+        ],
+        "description": "Middleware."
+    },
+    "Route-namespace Laravel 5.6 ": {
+        "prefix": "Route::namespace",
+        "body": [
+            "Route::namespace('Admin')->group(function () {",
+            "    // Controllers Within The 'App\\Http\\Controllers\\Admin' Namespace",
+            "});"
+        ],
+        "description": "Namespaces."
+    },
+    "Route-domain Laravel 5.6 ": {
+        "prefix": "Route::domain",
+        "body": [
+            "Route::domain('{account}.myapp.com')->group(function () {",
+                "Route::get('user/{id}', function ($account, $id) {",
+                "    //",
+                "});",
+            "});"
+        ],
+        "description": "Sub-Domain Routing."
+    },
+    "Route-prefix Laravel 5.6 ": {
+        "prefix": "Route::prefix",
+        "body": [
+            "Route::prefix('admin')->group(function () {",
+                "Route::get('users', function () {",
+                "    // Matches The '\\/admin\\/users' URL",
+                "});",
+            "});"
+        ],
+        "description": "Route Prefixes."
+    },
+    "Route-name Laravel 5.6 ": {
+        "prefix": "Route::name",
+        "body": [
+            "Route::name('admin.')->group(function () {",
+                "Route::get('users', function () {",
+                "    // Route assigned name 'admin.users'...",
+                "})->name('users');",
+            "});"
+        ],
+        "description": "Route Prefixes."
     }
 }
