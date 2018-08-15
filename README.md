@@ -11,7 +11,9 @@
 Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 
 ## Support Snippet Prefix
-
+* Blade
+* Validate
+* New Route
 * Auth
 * Broadcast
 * Cache
