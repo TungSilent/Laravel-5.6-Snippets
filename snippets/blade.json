@@ -133,7 +133,7 @@
         "prefix": "@empty",
         "body": [
             "@empty($records)",
-            "    // $records is "empty"...",
+            "    // $records is 'empty'...",
             "@endempty"
         ],
         "description": "If Statements."
