@@ -4,7 +4,7 @@
 
 ## Screenshot
 
-![Screenshot](https://github.com/TungSilent/Laravel-5.6-Snippets/blob/master/images/screenshot.gif)
+![Screenshot](https://raw.githubusercontent.com/TungSilent/Laravel-5.6-Snippets/master/images/screenshot.gif)
 
 ## Usage
 
