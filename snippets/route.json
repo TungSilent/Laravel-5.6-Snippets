@@ -56,12 +56,19 @@
         ],
         "description": "Basic Get Route."
     },
+    "Route-get-function-name.sublime-snippet": {
+        "prefix": "Route::get-function-name",
+        "body": [
+            "Route::get('${1:users/profile}', function (${2:\\$id}) {",
+            "    $3",
+            "})->name('profile');"
+        ],
+        "description": "Basic Get Route."
+    },
     "Route-get-name.sublime-snippet": {
         "prefix": "Route::get-name",
         "body": [
-            "Route::get('${1:users/{id\\}}', function (${2:\\$id}) {",
-            "    $3",
-            "})->name('asName');"
+            "Route::get('${1:users/profile}', 'UserProfileController@show')->name('profile');"
         ],
         "description": "Basic Get Route."
     },
