@@ -1,12 +1,12 @@
 {
-    "name": "laravel5-snippets",
-    "displayName": "Laravel 5 Snippets",
-    "description": "Laravel 5 snippets for Visual Studio Code",
-    "version": "1.5.0",
+    "name": "laravel-5-6-snippets",
+    "displayName": "Laravel 5.6 Snippets",
+    "description": "Laravel 5.6 snippets for Visual Studio Code",
+    "version": "1.0.0",
     "publisher": "onecentlin",
     "author": {
-        "name": "Winnie Lin",
-        "email": "onecentlin@gmail.com",
+        "name": "Thanh Tung",
+        "email": "luongthanhtunglc@gmail.com",
         "url": "https://devmanna.blogspot.com"
     },
     "homepage": "https://github.com/onecentlin/laravel5-snippets-vscode",
