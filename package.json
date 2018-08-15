@@ -2,20 +2,20 @@
     "name": "laravel-5-6-snippets",
     "displayName": "Laravel 5.6 Snippets",
     "description": "Laravel 5.6 snippets for Visual Studio Code",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "publisher": "Thanh Tùng - onecentlin",
     "author": {
         "name": "Thanh Tung",
         "email": "luongthanhtunglc@gmail.com",
-        "url": "https://devmanna.blogspot.com"
+        "url": "https://facebook.com/Tung.Silent"
     },
-    "homepage": "https://github.com/onecentlin/laravel5-snippets-vscode",
+    "homepage": "https://github.com/TungSilent/Laravel-5.6-Snippets",
     "repository": {
         "type": "git",
-        "url": "https://github.com/onecentlin/laravel5-snippets-vscode"
+        "url": "https://github.com/TungSilent/Laravel-5.6-Snippets"
     },
     "bugs": {
-        "url": "https://github.com/onecentlin/laravel5-snippets-vscode/issues"
+        "url": "https://github.com/TungSilent/Laravel-5.6-Snippets/issues"
     },
     "engines": {
         "vscode": "^1.0.0"
@@ -129,6 +129,10 @@
             {
                 "language": "php",
                 "path": "./snippets/broadcast.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/validate.json"
             }
         ]
     }
