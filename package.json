@@ -133,6 +133,10 @@
             {
                 "language": "php",
                 "path": "./snippets/validate.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/blade.json"
             }
         ]
     }
