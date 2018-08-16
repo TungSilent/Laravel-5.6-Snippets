@@ -1,0 +1,173 @@
+{
+    "->all()": {
+        "prefix": "->all()",
+        "body": [
+            "->all();"            
+        ],
+        "description": "Method Listing."
+    },"->avg()": {
+        "prefix": "->avg()",
+        "body": [
+            "->avg();"
+        ],
+        "description": "Method Listing."
+    },"->chunk(1)": {
+        "prefix": "->chunk(1)",
+        "body": [
+            "->chunk(1);"
+        ],
+        "description": "Method Listing."
+    },"->collapse()": {
+        "prefix": "->collapse()",
+        "body": [
+            "->collapse();"
+        ],
+        "description": "Method Listing."
+    },"->collapse() For example": {
+        "prefix": "->collapse() ex",
+        "body": [
+            "\\$collection = collect([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);",
+            "\\$collapsed = \\$collection->collapse();",
+            "\\$collapsed->all();",
+            "// [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+        ],
+        "description": "Method Listing."
+    },"->combine(['George', 29])": {
+        "prefix": "->combine()",
+        "body": [
+            "->combine();"
+        ],
+        "description": "Method Listing."
+    },"->combine(['George', 29]) For example": {
+        "prefix": "->combine() ex",
+        "body": [
+            "\\$collection = collect(['name', 'age']);",
+            "\\$combined = \\$collection->combine(['George', 29]);",
+            "\\$combined->all();",
+            "// ['name' => 'George', 'age' => 29]"
+        ],
+        "description": "Method Listing."
+    },"->concat(['name' => 'Johnny Doe'])": {
+        "prefix": "->concat()",
+        "body": [
+            "->concat();"
+        ],
+        "description": "Method Listing."
+    },"->concat(['name' => 'Johnny Doe']) For example": {
+        "prefix": "->concat() ex",
+        "body": [
+            "\\$collection = collect(['John Doe']);",
+            "\\$concatenated = \\$collection->concat(['Jane Doe'])->concat(['name' => 'Johnny Doe']);",
+            "\\$concatenated->all();",
+            "// ['John Doe', 'Jane Doe', 'Johnny Doe']"
+                    ],
+        "description": "Method Listing."
+    },"->contains()": {
+        "prefix": "->contains()",
+        "body": [
+            "->contains();"
+        ],
+        "description": "Method Listing."
+    },"->contains() For example": {
+        "prefix": "->contains() ex",
+        "body": [
+            "\\$collection = collect(['name' => 'Desk', 'price' => 100]);",
+            "\\$collection->contains('Desk');",
+            "// true",
+            "\\$collection->contains('New York');",
+            "// false"
+                    ],
+        "description": "Method Listing."
+    },
+    "->containsStrict()": {
+        "prefix": "->containsStrict()",
+        "body": [
+            "->containsStrict();"
+        ],
+        "description": "Method Listing."
+    },
+    "->count()": {
+        "prefix": "->count()",
+        "body": [
+            "->count();"
+        ],
+        "description": "Method Listing."
+    },
+    "->count() For example": {
+        "prefix": "->count() ex",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4]);",
+            "\\$collection->count();",
+            "// 4"
+                    ],
+        "description": "Method Listing."
+    },
+    "->crossJoin()": {
+        "prefix": "->crossJoin()",
+        "body": [
+            "->crossJoin();"
+        ],
+        "description": "Method Listing."
+    },
+    "->crossJoin() For example": {
+        "prefix": "->crossJoin() ex",
+        "body": [
+            "\\$collection = collect([1, 2]);",
+            "\\$matrix = \\$collection->crossJoin(['a', 'b'], ['I', 'II']);",
+            "\\$matrix->all();",
+            "/*",
+            "    [",
+            "        [1, 'a', 'I'],",
+            "        [1, 'a', 'II'],",
+            "        [1, 'b', 'I'],",
+            "        [1, 'b', 'II'],",
+            "        [2, 'a', 'I'],",
+            "        [2, 'a', 'II'],",
+            "        [2, 'b', 'I'],",
+            "        [2, 'b', 'II'],",
+            "    ]",
+            "*/"
+                    ],
+        "description": "Method Listing."
+    },
+    "->dd()": {
+        "prefix": "->dd()",
+        "body": [
+            "->dd();"
+        ],
+        "description": "Method Listing."
+    },
+    "->dd() For example": {
+        "prefix": "->dd() ex",
+        "body": [
+            "\\$collection = collect(['John Doe', 'Jane Doe']);",
+            "\\$collection->dd();",
+            "/*",
+            "    Collection {",
+            "        #items: array:2 [",
+            "            0 => 'John Doe'",
+            "            1 => 'Jane Doe'",
+            "        ]",
+            "    }",
+            "*/"
+                    ],
+        "description": "Method Listing."
+    },
+    "->diff()": {
+        "prefix": "->diff()",
+        "body": [
+            "->diff();"
+        ],
+        "description": "Method Listing."
+    },
+    "->diff() For example": {
+        "prefix": "->diff() ex",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5]);",
+            "\\$diff = \\$collection->diff([2, 4, 6, 8]);",
+            "\\$diff->all();",
+            "// [1, 3, 5]"
+                    ],
+        "description": "Method Listing."
+    }
+}
