@@ -1,0 +1,230 @@
+{
+    "protected-table": {
+        "prefix": "protected-table",
+        "body": [
+            "protected \\$table = 'my_flights';"
+        ],
+        "description": "Table Names."
+    },
+    "protected-fillable": {
+        "prefix": "protected-fillable",
+        "body": [
+            "protected \\$fillable = ['name'];"
+        ],
+        "description": "Mass Assignment."
+    },
+    "protected-guarded": {
+        "prefix": "protected-guarded",
+        "body": [
+            "protected \\$guarded = ['price'];"
+        ],
+        "description": "Guarding Attributes."
+    },
+    "public-timestamps": {
+        "prefix": "public-timestamps",
+        "body": [
+            "public \\$timestamps = false;"
+        ],
+        "description": "Timestamps."
+    },
+    "protected-dateFormat": {
+        "prefix": "protected-dateFormat",
+        "body": [
+            "protected \\$dateFormat = 'U';"
+        ],
+        "description": "Timestamps."
+    },
+    "protected-connection": {
+        "prefix": "protected-connection",
+        "body": [
+            "protected \\$connection = 'connection-name';"
+        ],
+        "description": "Database Connection."
+    },
+    "App\\Flight::all()": {
+        "prefix": "App\\Flight::all()",
+        "body": [
+            "\\$flights = App\\Flight::all();"
+        ],
+        "description": "Retrieving Models."
+    },
+    "App\\Flight::where()": {
+        "prefix": "App\\Flight::where()",
+        "body": [
+            "\\$flights = App\\Flight::where('active', 1)",
+            "   ->orderBy('name', 'desc')",
+            "   ->take(10)",
+            "   ->get();"
+        ],
+        "description": "Adding Additional Constraints."
+    },
+    "App\\Flight::where-first()": {
+        "prefix": "App\\Flight::where()->first()",
+        "body": [
+            "\\$flight = App\\Flight::where('active', 1)->first();"
+        ],
+        "description": "Retrieving Single Models / Aggregates."
+    },
+    "App\\Flight::where-firstOrFail()": {
+        "prefix": "App\\Flight::where()->firstOrFail()",
+        "body": [
+            "\\$model = App\\Flight::where('legs', '>', 100)->firstOrFail();"
+        ],
+        "description": "Retrieving Single Models / Aggregates."
+    },
+    "App\\Flight::find()": {
+        "prefix": "App\\Flight::find()",
+        "body": [
+            "\\$flight = App\\Flight::find(1);"
+        ],
+        "description": "Retrieving Single Models / Aggregates."
+    },
+    "App\\Flight::findOrFail()": {
+        "prefix": "App\\Flight::findOrFail()",
+        "body": [
+            "\\$model = App\\Flight::findOrFail(1);"
+        ],
+        "description": "Retrieving Single Models / Aggregates."
+    },
+    "App\\Flight::where('active', 1)->count()": {
+        "prefix": "App\\Flight::where('active', 1)->count()",
+        "body": [
+            "\\$count = App\\Flight::where('active', 1)->count();"
+        ],
+        "description": "Retrieving Aggregates."
+    },
+    "App\\Flight::where('active', 1)->max('price')()": {
+        "prefix": "App\\Flight::where('active', 1)->max('price')",
+        "body": [
+            "\\$max = App\\Flight::where('active', 1)->max('price');"
+        ],
+        "description": "Retrieving Aggregates."
+    },
+    "Save() Inserts": {
+        "prefix": "Save() Inserts",
+        "body": [
+            "\\$flight = new Flight;",
+            "\\$flight->name = \\$request->name;",
+            "\\$flight->save();"
+        ],
+        "description": "Inserting & Updating Models."
+    },
+    "Save() Updates": {
+        "prefix": "Save() Updates",
+        "body": [
+            "\\$flight = App\\Flight::find(1);",
+            "\\$flight->name = 'New Flight Name';",
+            "\\$flight->save();"
+        ],
+        "description": "Inserting & Updating Models."
+    },
+    "\\$flight->delete()": {
+        "prefix": "delete()",
+        "body": [
+            "\\$flight = App\\Flight::find(1);",
+            "\\$flight->delete();"
+        ],
+        "description": "Deleting Models."
+    },
+    "where() Updates()": {
+        "prefix": "App\\Flight::where()->Updates()",
+        "body": [
+            "App\\Flight::where('active', 1)",
+            "            ->where('destination', 'San Diego')",
+            "            ->update(['delayed' => 1]);"
+        ],
+        "description": "Mass Updates."
+    },
+    "App\\Flight::create()": {
+        "prefix": "App\\Flight::create()",
+        "body": [
+            "\\$flight = App\\Flight::create(['name' => 'Flight 10']);"
+        ],
+        "description": "Mass Assignment."
+    },
+    "$flight->fill()": {
+        "prefix": "$flight->fill()",
+        "body": [
+            "\\$flight->fill(['name' => 'Flight 22']);"
+        ],
+        "description": "Mass Assignment."
+    },
+    "App\\Flight::firstOrCreate()": {
+        "prefix": "App\\Flight::firstOrCreate()",
+        "body": [
+            "\\$flight = App\\Flight::firstOrCreate(",
+            "    ['name' => 'Flight 10'], ['delayed' => 1]",
+            ");"
+        ],
+        "description": "Other Creation Methods."
+    },
+    "App\\Flight::firstOrNew()": {
+        "prefix": "App\\Flight::firstOrNew()",
+        "body": [
+            "\\$flight = App\\Flight::firstOrNew(",
+            "    ['name' => 'Flight 10'], ['delayed' => 1]",
+            ");"
+        ],
+        "description": "Other Creation Methods."
+    },
+    "App\\Flight::updateOrCreate()": {
+        "prefix": "App\\Flight::updateOrCreate()",
+        "body": [
+            "\\$flight = App\\Flight::updateOrCreate(",
+            "    ['departure' => 'Oakland', 'destination' => 'San Diego'],",
+            "    ['price' => 99]",
+            ");"
+        ],
+        "description": "Other Creation Methods."
+    },
+    "App\\Flight::destroy()": {
+        "prefix": "App\\Flight::destroy()",
+        "body": [
+            "App\\Flight::destroy(1);",
+            "App\\Flight::destroy([1, 2, 3]);",
+            "App\\Flight::destroy(1, 2, 3);"
+        ],
+        "description": "Deleting An Existing Model By Key."
+    },
+    "App\\Flight::where()->delete()": {
+        "prefix": "App\\Flight::where()->delete()",
+        "body": [
+            "\\$deletedRows = App\\Flight::where('active', 0)->delete();"
+        ],
+        "description": "Deleting Models By Query."
+    },
+    "App\\Flight::withTrashed()": {
+        "prefix": "App\\Flight::withTrashed()",
+        "body": [
+            "\\$flights = App\\Flight::withTrashed()",
+            "    ->where('account_id', 1)",
+            "    ->get();"
+        ],
+        "description": "Including Soft Deleted Models."
+    },
+    "App\\Flight::onlyTrashed()": {
+        "prefix": "App\\Flight::onlyTrashed()",
+        "body": [
+            "\\$flights = App\\Flight::onlyTrashed()",
+            "    ->where('airline_id', 1)",
+            "    ->get();"
+        ],
+        "description": "Retrieving Only Soft Deleted Models."
+    },
+    "App\\Flight::withTrashed()->restore()": {
+        "prefix": "App\\Flight::withTrashed()->restore()",
+        "body": [
+            "App\\Flight::withTrashed()",
+            "    ->where('airline_id', 1)",
+            "    ->restore();"
+        ],
+        "description": "Retrieving Only Soft Deleted Models."
+    },
+    "forceDelete()": {
+        "prefix": "forceDelete()",
+        "body": [
+            "\\$flight->forceDelete();"
+        ],
+        "description": "Permanently Deleting Models."
+    }
+}

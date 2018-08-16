@@ -193,13 +193,13 @@
         "prefix": "Route::middleware",
         "body": [
             "Route::middleware(['first', 'second'])->group(function () {",
-                "Route::get('/', function () {",
-                "    // Uses first & second Middleware",
-                "});",
+            "    Route::get('/', function () {",
+            "        // Uses first & second Middleware",
+            "    });",
             
-                "Route::get('user/profile', function () {",
-                "    // Uses first & second Middleware",
-                "});",
+            "    Route::get('user/profile', function () {",
+            "        // Uses first & second Middleware",
+            "    });",
             "});"
         ],
         "description": "Middleware."
@@ -217,9 +217,9 @@
         "prefix": "Route::domain",
         "body": [
             "Route::domain('{account}.myapp.com')->group(function () {",
-                "Route::get('user/{id}', function ($account, $id) {",
-                "    //",
-                "});",
+            "    Route::get('user/{id}', function ($account, $id) {",
+            "        //",
+            "    });",
             "});"
         ],
         "description": "Sub-Domain Routing."
@@ -228,9 +228,9 @@
         "prefix": "Route::prefix",
         "body": [
             "Route::prefix('admin')->group(function () {",
-                "Route::get('users', function () {",
-                "    // Matches The '\\/admin\\/users' URL",
-                "});",
+            "    Route::get('users', function () {",
+            "        // Matches The '\/admin\/users' URL",
+            "    });",
             "});"
         ],
         "description": "Route Prefixes."
@@ -239,10 +239,19 @@
         "prefix": "Route::name",
         "body": [
             "Route::name('admin.')->group(function () {",
-                "Route::get('users', function () {",
-                "    // Route assigned name 'admin.users'...",
-                "})->name('users');",
+            "    Route::get('users', function () {",
+            "        // Route assigned name 'admin.users'...",
+            "    })->name('users');",
             "});"
+        ],
+        "description": "Route Prefixes."
+    },
+    "Route-get-middleware Laravel 5.6 ": {
+        "prefix": "Route::get-middleware",
+        "body": [
+            "Route::get('profile', function () {",
+            "    // Only authenticated users may enter...",
+            "})->middleware('auth');"
         ],
         "description": "Route Prefixes."
     }
