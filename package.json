@@ -141,6 +141,10 @@
             {
                 "language": "php",
                 "path": "./snippets/eorm.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/collections.json"
             }
         ]
     }
