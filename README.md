@@ -1,6 +1,7 @@
 # Laravel 5.6 Snippets
 
 [`Laravel 5.6 snippets`](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets) extension for Visual Studio Code.
+Based on the development of ['onecentlin'](https://github.com/onecentlin/laravel5-snippets-vscode/issues) by ['Thanh Tùng](https://github.com/TungSilent/Laravel-5.6-Snippets/issues)
 
 ## Screenshot
 
@@ -14,6 +15,7 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 * Blade
 * Validate
 * New Route
+* Oerm
 * Auth
 * Broadcast
 * Cache
