@@ -49,7 +49,7 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 * Str
 * View
 
-> Blade - Please install [`Laravel Blade Snippets` extension](https://marketplace.visualstudio.com/items?itemName=ThanhTung.laravel56-snippets) for blade syntax highlighting and better support with blade and emmet.
+> Blade - Please install [`Laravel Blade Snippets` extension](https://marketplace.visualstudio.com/items?itemName=ThanhTung.laravel-56-snippets) for blade syntax highlighting and better support with blade and emmet.
 
 ## Contact
 
