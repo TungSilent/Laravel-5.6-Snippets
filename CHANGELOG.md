@@ -3,7 +3,6 @@
 * Oerm
 ## 2.0.0
 * Add new Route 
-* Add Blade Templates: @....
 * Add Validate
 ...............
 ## 1.5.0
