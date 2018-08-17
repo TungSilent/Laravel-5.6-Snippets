@@ -50,16 +50,16 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 * Str
 * View
 
-> Blade - Please install [`Laravel Blade Snippets` extension](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade) for blade syntax highlighting and better support with blade and emmet.
+> Blade - Please install [`Laravel Blade Snippets` extension](https://marketplace.visualstudio.com/items?itemName=ThanhTung.laravel56-snippets) for blade syntax highlighting and better support with blade and emmet.
 
 ## Contact
 
-Please file any [issues](https://github.com/onecentlin/laravel5-snippets-vscode/issues) or have a suggestion please tweet me [@onecentlin](https://twitter.com/onecentlin).
+Please file any [issues](https://github.com/TungSilent/Laravel-5.6-Snippets/issues) or have a suggestion please facebook me [@Thanh Tùng](https://facebook.com/Tung.Silent).
 
 ## Credits
 
-* Snippets based on [Laravel 5 Snippets for Sublime Text](https://github.com/Lykegenes/laravel-5-snippets)
+* Snippets based on [Laravel 5 Snippets for Sublime Text](https://github.com/onecentlin/laravel5-snippets-vscode)
 
 ## License
 
-Please read [License](https://github.com/onecentlin/laravel5-snippets-vscode/blob/master/LICENSE.md) for more information.
+Please read [License](https://github.com/TungSilent/Laravel-5.6-Snippets/blob/master/LICENSE.md) for more information.
