@@ -54,7 +54,7 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 
 ## Contact
 
-Please file any [issues](https://github.com/TungSilent/Laravel-5.6-Snippets/issues) or have a suggestion please facebook me [@Thanh Tùng](https://facebook.com/Tung.Silent).
+Please file any [issues](https://github.com/TungSilent/Laravel-5.6-Snippets/issues) or have a suggestion please facebook me [Thanh Tùng](https://facebook.com/Tung.Silent).
 
 ## Credits
 
