@@ -12,9 +12,6 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 
 ## Support Snippet Prefix
 * New Route
-* Blade
-
-![Screenshot](https://raw.githubusercontent.com/TungSilent/Laravel-5.6-Snippets/master/images/blade.gif)
 * Validate
 
 ![Screenshot](https://raw.githubusercontent.com/TungSilent/Laravel-5.6-Snippets/master/images/validate.gif)
