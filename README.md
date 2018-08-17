@@ -12,11 +12,15 @@ Based on the development of ['onecentlin'](https://github.com/onecentlin/laravel
 Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 
 ## Support Snippet Prefix
-* Blade
-* Validate
 * New Route
+* Blade
+![Screenshot](https://raw.githubusercontent.com/TungSilent/Laravel-5.6-Snippets/master/images/blade.gif)
+* Validate
+![Screenshot](https://raw.githubusercontent.com/TungSilent/Laravel-5.6-Snippets/master/images/validate.gif)
 * Oerm
+![Screenshot](https://raw.githubusercontent.com/TungSilent/Laravel-5.6-Snippets/master/images/eorm.gif)
 * Collections
+![Screenshot](https://raw.githubusercontent.com/TungSilent/Laravel-5.6-Snippets/master/images/collections.gif)
 * Auth
 * Broadcast
 * Cache
