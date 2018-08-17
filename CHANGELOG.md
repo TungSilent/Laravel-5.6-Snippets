@@ -1,5 +1,6 @@
 ## 2.0.0
 * Add new Route 
+
     Route::namespace('Admin')->group(function () {
         Route::get('login', 'LoginController@getLogin')->name('getLogin');
         Route::middleware(['auth'])->group(function () {
