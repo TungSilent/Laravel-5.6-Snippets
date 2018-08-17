@@ -1,24 +1,8 @@
+## 2.1.0
+* Collections
+* Oerm
 ## 2.0.0
 * Add new Route 
-
-    Route::namespace('Admin')->group(function () {
-    
-        Route::get('login', 'LoginController@getLogin')->name('getLogin');
-        
-        Route::middleware(['auth'])->group(function () {
-        
-            Route::prefix('admin')->group(function () {
-            
-                Route::get('/', function () {
-                
-                    return view('admin.Module.dashboard.main');
-                    
-                })->name('admin');               
-                
-    });    
-    
-});
-
 * Add Blade Templates: @....
 * Add Validate
 ...............
