@@ -48,10 +48,27 @@
         ],
         "description": "Retrieving Models."
     },
+    "::all()": {
+        "prefix": "::all()",
+        "body": [
+            "::all();"
+        ],
+        "description": "Retrieving Models."
+    },
     "App\\Flight::where()": {
         "prefix": "App\\Flight::where()",
         "body": [
             "\\$flights = App\\Flight::where('active', 1)",
+            "   ->orderBy('name', 'desc')",
+            "   ->take(10)",
+            "   ->get();"
+        ],
+        "description": "Adding Additional Constraints."
+    },
+    "::where()": {
+        "prefix": "::where()",
+        "body": [
+            "::where('active', 1)",
             "   ->orderBy('name', 'desc')",
             "   ->take(10)",
             "   ->get();"
@@ -65,10 +82,24 @@
         ],
         "description": "Retrieving Single Models / Aggregates."
     },
+    "::where-first()": {
+        "prefix": "::where()->first()",
+        "body": [
+            "::where('active', 1)->first();"
+        ],
+        "description": "Retrieving Single Models / Aggregates."
+    },
     "App\\Flight::where-firstOrFail()": {
         "prefix": "App\\Flight::where()->firstOrFail()",
         "body": [
             "\\$model = App\\Flight::where('legs', '>', 100)->firstOrFail();"
+        ],
+        "description": "Retrieving Single Models / Aggregates."
+    },
+    "::where-firstOrFail()": {
+        "prefix": "::where()->firstOrFail()",
+        "body": [
+            "::where('legs', '>', 100)->firstOrFail();"
         ],
         "description": "Retrieving Single Models / Aggregates."
     },
@@ -93,10 +124,31 @@
         ],
         "description": "Retrieving Aggregates."
     },
+    "::where('active', 1)->count()": {
+        "prefix": "::where('active', 1)->count()",
+        "body": [
+            "::where('active', 1)->count();"
+        ],
+        "description": "Retrieving Aggregates."
+    },
+    "::where('active', 1)->max('price')()": {
+        "prefix": "::where('active', 1)->max('price')",
+        "body": [
+            "::where('active', 1)->max('price');"
+        ],
+        "description": "Retrieving Aggregates."
+    },
     "App\\Flight::where('active', 1)->max('price')()": {
         "prefix": "App\\Flight::where('active', 1)->max('price')",
         "body": [
             "\\$max = App\\Flight::where('active', 1)->max('price');"
+        ],
+        "description": "Retrieving Aggregates."
+    },
+    "::where('active', 1)->max('price')()": {
+        "prefix": "::where('active', 1)->max('price')",
+        "body": [
+            "::where('active', 1)->max('price');"
         ],
         "description": "Retrieving Aggregates."
     },
@@ -135,10 +187,26 @@
         ],
         "description": "Mass Updates."
     },
+    "where()-Updates()": {
+        "prefix": "::where()->Updates()",
+        "body": [
+            "::where('active', 1)",
+            "            ->where('destination', 'San Diego')",
+            "            ->update(['delayed' => 1]);"
+        ],
+        "description": "Mass Updates."
+    },
     "App\\Flight::create()": {
         "prefix": "App\\Flight::create()",
         "body": [
             "\\$flight = App\\Flight::create(['name' => 'Flight 10']);"
+        ],
+        "description": "Mass Assignment."
+    },
+    "::create()": {
+        "prefix": "::create()",
+        "body": [
+            "::create(['name' => 'Flight 10']);"
         ],
         "description": "Mass Assignment."
     },
@@ -158,10 +226,28 @@
         ],
         "description": "Other Creation Methods."
     },
+    "::firstOrCreate()": {
+        "prefix": "::firstOrCreate()",
+        "body": [
+            "::firstOrCreate(",
+            "    ['name' => 'Flight 10'], ['delayed' => 1]",
+            ");"
+        ],
+        "description": "Other Creation Methods."
+    },
     "App\\Flight::firstOrNew()": {
         "prefix": "App\\Flight::firstOrNew()",
         "body": [
             "\\$flight = App\\Flight::firstOrNew(",
+            "    ['name' => 'Flight 10'], ['delayed' => 1]",
+            ");"
+        ],
+        "description": "Other Creation Methods."
+    },
+    "::firstOrNew()": {
+        "prefix": "::firstOrNew()",
+        "body": [
+            "::firstOrNew(",
             "    ['name' => 'Flight 10'], ['delayed' => 1]",
             ");"
         ],
@@ -177,12 +263,29 @@
         ],
         "description": "Other Creation Methods."
     },
+    "::updateOrCreate()": {
+        "prefix": "::updateOrCreate()",
+        "body": [
+            "::updateOrCreate(",
+            "    ['departure' => 'Oakland', 'destination' => 'San Diego'],",
+            "    ['price' => 99]",
+            ");"
+        ],
+        "description": "Other Creation Methods."
+    },
     "App\\Flight::destroy()": {
         "prefix": "App\\Flight::destroy()",
         "body": [
             "App\\Flight::destroy(1);",
             "App\\Flight::destroy([1, 2, 3]);",
             "App\\Flight::destroy(1, 2, 3);"
+        ],
+        "description": "Deleting An Existing Model By Key."
+    },
+    "::destroy()": {
+        "prefix": "::destroy()",
+        "body": [
+            "::destroy(1);"            
         ],
         "description": "Deleting An Existing Model By Key."
     },
@@ -193,10 +296,26 @@
         ],
         "description": "Deleting Models By Query."
     },
+    "::where()->delete()": {
+        "prefix": "::where()->delete()",
+        "body": [
+            "::where('active', 0)->delete();"
+        ],
+        "description": "Deleting Models By Query."
+    },
     "App\\Flight::withTrashed()": {
         "prefix": "App\\Flight::withTrashed()",
         "body": [
             "\\$flights = App\\Flight::withTrashed()",
+            "    ->where('account_id', 1)",
+            "    ->get();"
+        ],
+        "description": "Including Soft Deleted Models."
+    },
+    "::withTrashed()": {
+        "prefix": "::withTrashed()",
+        "body": [
+            "::withTrashed()",
             "    ->where('account_id', 1)",
             "    ->get();"
         ],
@@ -211,10 +330,28 @@
         ],
         "description": "Retrieving Only Soft Deleted Models."
     },
+    "::onlyTrashed()": {
+        "prefix": "::onlyTrashed()",
+        "body": [
+            "::onlyTrashed()",
+            "    ->where('airline_id', 1)",
+            "    ->get();"
+        ],
+        "description": "Retrieving Only Soft Deleted Models."
+    },
     "App\\Flight::withTrashed()->restore()": {
         "prefix": "App\\Flight::withTrashed()->restore()",
         "body": [
             "App\\Flight::withTrashed()",
+            "    ->where('airline_id', 1)",
+            "    ->restore();"
+        ],
+        "description": "Retrieving Only Soft Deleted Models."
+    },
+    "::withTrashed()->restore()": {
+        "prefix": "::withTrashed()->restore()",
+        "body": [
+            "::withTrashed()",
             "    ->where('airline_id', 1)",
             "    ->restore();"
         ],
@@ -226,5 +363,19 @@
             "\\$flight->forceDelete();"
         ],
         "description": "Permanently Deleting Models."
+    },
+    "findOrfail()": {
+        "prefix": "::findOrfail()",
+        "body": [
+            "::findOrfail();"
+        ],
+        "description": "Permanently Models."
+    },
+    "find()": {
+        "prefix": "::find()",
+        "body": [
+            "::find();"
+        ],
+        "description": "Permanently Models."
     }
 }
