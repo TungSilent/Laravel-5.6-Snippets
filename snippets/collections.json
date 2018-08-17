@@ -24,7 +24,7 @@
         ],
         "description": "Method Listing."
     },"->collapse() For example": {
-        "prefix": "->collapse() ex",
+        "prefix": "->collapse() example",
         "body": [
             "\\$collection = collect([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);",
             "\\$collapsed = \\$collection->collapse();",
@@ -39,7 +39,7 @@
         ],
         "description": "Method Listing."
     },"->combine(['George', 29]) For example": {
-        "prefix": "->combine() ex",
+        "prefix": "->combine() example",
         "body": [
             "\\$collection = collect(['name', 'age']);",
             "\\$combined = \\$collection->combine(['George', 29]);",
@@ -54,7 +54,7 @@
         ],
         "description": "Method Listing."
     },"->concat(['name' => 'Johnny Doe']) For example": {
-        "prefix": "->concat() ex",
+        "prefix": "->concat() example",
         "body": [
             "\\$collection = collect(['John Doe']);",
             "\\$concatenated = \\$collection->concat(['Jane Doe'])->concat(['name' => 'Johnny Doe']);",
@@ -69,7 +69,7 @@
         ],
         "description": "Method Listing."
     },"->contains() For example": {
-        "prefix": "->contains() ex",
+        "prefix": "->contains() example",
         "body": [
             "\\$collection = collect(['name' => 'Desk', 'price' => 100]);",
             "\\$collection->contains('Desk');",
@@ -94,7 +94,7 @@
         "description": "Method Listing."
     },
     "->count() For example": {
-        "prefix": "->count() ex",
+        "prefix": "->count() example",
         "body": [
             "\\$collection = collect([1, 2, 3, 4]);",
             "\\$collection->count();",
@@ -110,7 +110,7 @@
         "description": "Method Listing."
     },
     "->crossJoin() For example": {
-        "prefix": "->crossJoin() ex",
+        "prefix": "->crossJoin() example",
         "body": [
             "\\$collection = collect([1, 2]);",
             "\\$matrix = \\$collection->crossJoin(['a', 'b'], ['I', 'II']);",
@@ -138,7 +138,7 @@
         "description": "Method Listing."
     },
     "->dd() For example": {
-        "prefix": "->dd() ex",
+        "prefix": "->dd() example",
         "body": [
             "\\$collection = collect(['John Doe', 'Jane Doe']);",
             "\\$collection->dd();",
@@ -161,13 +161,1601 @@
         "description": "Method Listing."
     },
     "->diff() For example": {
-        "prefix": "->diff() ex",
+        "prefix": "->diff() example",
         "body": [
             "\\$collection = collect([1, 2, 3, 4, 5]);",
             "\\$diff = \\$collection->diff([2, 4, 6, 8]);",
             "\\$diff->all();",
             "// [1, 3, 5]"
                     ],
+        "description": "Method Listing."
+    },
+    "->diffAssoc()": {
+        "prefix": "->diffAssoc()",
+        "body": [
+            "->diffAssoc();"
+        ],
+        "description": "Method Listing."
+    },
+    "->diffAssoc() For example": {
+        "prefix": "->diffAssoc() example",
+        "body": [
+            "\\$collection = collect([",
+            "    'color' => 'orange',",
+            "    'type' => 'fruit',",
+            "    'remain' => 6",
+            "]);",
+            "\\$diff = \\$collection->diffAssoc([",
+            "    'color' => 'yellow',",
+            "    'type' => 'fruit',",
+            "    'remain' => 3,",
+            "    'used' => 6",
+            "]);",
+            "\\$diff->all();", 
+            "// ['color' => 'orange', 'remain' => 6]"
+                    ],
+        "description": "Method Listing."
+    },
+    "->diffKeys()": {
+        "prefix": "->diffKeys()",
+        "body": [
+            "->diffKeys();"
+        ],
+        "description": "Method Listing."
+    },
+    "->diffKeys() For example": {
+        "prefix": "->diffKeys() example",
+        "body": [
+            "\\$collection = collect([",
+            "    'one' => 10,",
+            "    'two' => 20,",
+            "    'three' => 30,",
+            "    'four' => 40,",
+            "    'five' => 50,",
+            "]);  ",          
+            "\\$diff = \\$collection->diffKeys([",
+            "    'two' => 2,",
+            "    'four' => 4,",
+            "    'six' => 6,",
+            "    'eight' => 8,",
+            "]);",            
+            "\\$diff->all();",            
+            "// ['one' => 10, 'three' => 30, 'five' => 50]"
+                    ],
+        "description": "Method Listing."
+    },
+    "->dump()": {
+        "prefix": "->dump()",
+        "body": [
+            "->dump();"
+        ],
+        "description": "Method Listing."
+    },
+    "->dump() For example": {
+        "prefix": "->dump() example",
+        "body": [
+            "\\$collection = collect(['John Doe', 'Jane Doe']);",
+            "\\$collection->dump();",
+            "/*",
+            "    Collection {",
+            "        #items: array:2 [",
+            "            0 => 'John Doe'",
+            "            1 => 'Jane Doe'",
+            "        ]",
+            "    }",
+            "*/"
+                    ],
+        "description": "Method Listing."
+    },
+    "->each()": {
+        "prefix": "->each()",
+        "body": [
+            "->each();"
+        ],
+        "description": "Method Listing."
+    },
+    "->each() For example": {
+        "prefix": "->each() example",
+        "body": [
+            "\\$collection->each(function (\\$item, \\$key) {",
+            "    if (/* some condition */) {",
+            "        return false;",
+            "    }",
+            "});"
+               ],
+        "description": "Method Listing."
+    },
+    "->eachSpread()": {
+        "prefix": "->eachSpread()",
+        "body": [
+            "->eachSpread();"
+        ],
+        "description": "Method Listing."
+    },
+    "->eachSpread() For example": {
+        "prefix": "->eachSpread() example",
+        "body": [
+            "\\$collection = collect([['John Doe', 35], ['Jane Doe', 33]]);",
+            "\\$collection->eachSpread(function (\\$name, \\$age) {",
+            "        //",
+            "});"
+               ],
+        "description": "Method Listing."
+    },
+    "->every()": {
+        "prefix": "->every()",
+        "body": [
+            "->every();"
+        ],
+        "description": "Method Listing."
+    },
+    "->every() For example": {
+        "prefix": "->every() example",
+        "body": [
+            "collect([1, 2, 3, 4])->every(function (\\$value, \\$key) {",
+            "    return \\$value > 2;",
+            "});",            
+            "// false"
+               ],
+        "description": "Method Listing."
+    },
+    "->except()": {
+        "prefix": "->except()",
+        "body": [
+            "->except();"
+        ],
+        "description": "Method Listing."
+    },
+    "->except() For example": {
+        "prefix": "->except() example",
+        "body": [
+            "\\$collection = collect(['product_id' => 1, 'price' => 100, 'discount' => false]);",
+            "\\$filtered = \\$collection->except(['price', 'discount']);",
+            "\\$filtered->all();",
+            "// ['product_id' => 1]"
+               ],
+        "description": "Method Listing."
+    },
+    "->filter()": {
+        "prefix": "->filter()",
+        "body": [
+            "->filter();"
+        ],
+        "description": "Method Listing."
+    },
+    "->filter() For example": {
+        "prefix": "->filter() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4]);",
+            "\\$filtered = \\$collection->filter(function (\\$value, \\$key) {",
+            "    return $value > 2;",
+            "});",
+            "\\$filtered->all();",
+            "// [3, 4]"
+               ],
+        "description": "Method Listing."
+    },
+    "->first()": {
+        "prefix": "->first()",
+        "body": [
+            "->first();"
+        ],
+        "description": "Method Listing."
+    },
+    "->first() For example": {
+        "prefix": "->first() example",
+        "body": [
+            "collect([1, 2, 3, 4])->first(function (\\$value, \\$key) {",
+            "    return \\$value > 2;",
+            "});",
+            "// 3"
+               ],
+        "description": "Method Listing."
+    },
+    "->firstWhere()": {
+        "prefix": "->firstWhere()",
+        "body": [
+            "->firstWhere();"
+        ],
+        "description": "Method Listing."
+    },
+    "->firstWhere() For example": {
+        "prefix": "->firstWhere() example",
+        "body": [
+            "\\$collection = collect([",
+            "    ['name' => 'Regena', 'age' => 12],",
+            "    ['name' => 'Linda', 'age' => 14],",
+            "    ['name' => 'Diego', 'age' => 23],",
+            "    ['name' => 'Linda', 'age' => 84],",
+            "]);",            
+            "\\$collection->firstWhere('name', 'Linda');",            
+            "// ['name' => 'Linda', 'age' => 14]"
+               ],
+        "description": "Method Listing."
+    },
+    "->flatMap()": {
+        "prefix": "->flatMap()",
+        "body": [
+            "->flatMap();"
+        ],
+        "description": "Method Listing."
+    },
+    "->flatMap() For example": {
+        "prefix": "->flatMap() example",
+        "body": [
+            "\\$collection = collect([",
+            "    ['name' => 'Sally'],",
+            "    ['school' => 'Arkansas'],",
+            "    ['age' => 28]",
+            "]);",            
+            "\\$flattened = \\$collection->flatMap(function (\\$values) {",
+            "    return array_map('strtoupper', \\$values);",
+            "});" ,           
+            "\\$flattened->all(); " ,          
+            "// ['name' => 'SALLY', 'school' => 'ARKANSAS', 'age' => '28'];"
+               ],
+        "description": "Method Listing."
+    },
+    "->flatten()": {
+        "prefix": "->flatten()",
+        "body": [
+            "->flatten();"
+        ],
+        "description": "Method Listing."
+    },
+    "->flatten() For example": {
+        "prefix": "->flatten() example",
+        "body": [
+            "\\$collection = collect(['name' => 'taylor', 'languages' => ['php', 'javascript']]);",
+            "\\$flattened = \\$collection->flatten();",
+            "\\$flattened->all();",
+            "// ['taylor', 'php', 'javascript'];"
+               ],
+        "description": "Method Listing."
+    },
+    "->flip()": {
+        "prefix": "->flip()",
+        "body": [
+            "->flip();"
+        ],
+        "description": "Method Listing."
+    },
+    "->flip() For example": {
+        "prefix": "->flip() example",
+        "body": [
+            "\\$collection = collect(['name' => 'taylor', 'framework' => 'laravel']);",
+            "\\$flipped = \\$collection->flip();",
+            "\\$flipped->all();",
+            "// ['taylor' => 'name', 'laravel' => 'framework']"
+               ],
+        "description": "Method Listing."
+    },
+    "->forPage()": {
+        "prefix": "->forPage()",
+        "body": [
+            "->forPage();"
+        ],
+        "description": "Method Listing."
+    },
+    "->forPage() For example": {
+        "prefix": "->forPage() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5, 6, 7, 8, 9]);",
+            "\\$chunk = \\$collection->forPage(2, 3);",
+            "\\$chunk->all();",
+            "// [4, 5, 6]"
+               ],
+        "description": "Method Listing."
+    },
+    "->get()": {
+        "prefix": "->get()",
+        "body": [
+            "->get();"
+        ],
+        "description": "Method Listing."
+    },    
+    "->groupBy()": {
+        "prefix": "->groupBy()",
+        "body": [
+            "->groupBy();"
+        ],
+        "description": "Method Listing."
+    },
+    "->groupBy() For example": {
+        "prefix": "->groupBy() example",
+        "body": [
+            "\\$collection = collect([",
+            "    ['account_id' => 'account-x10', 'product' => 'Chair'],",
+            "    ['account_id' => 'account-x10', 'product' => 'Bookcase'],",
+            "    ['account_id' => 'account-x11', 'product' => 'Desk'],",
+            "]); ",           
+            "\\$grouped = \\$collection->groupBy('account_id');  "   ,       
+            "\\$grouped->toArray();",            
+            "/*",
+            "    [",
+            "        'account-x10' => [",
+            "            ['account_id' => 'account-x10', 'product' => 'Chair'],",
+            "            ['account_id' => 'account-x10', 'product' => 'Bookcase'],",
+            "        ],",
+            "        'account-x11' => [",
+            "            ['account_id' => 'account-x11', 'product' => 'Desk'],",
+            "        ],",
+            "    ]",
+            "*/"
+               ],
+        "description": "Method Listing."
+    },
+    "->has()": {
+        "prefix": "->has()",
+        "body": [
+            "->has();"
+        ],
+        "description": "Method Listing."
+    },
+    "->has() For example": {
+        "prefix": "->has() example",
+        "body": [
+            "\\$collection = collect(['account_id' => 1, 'product' => 'Desk']);",
+            "\\$collection->has('product');",
+            "// true"
+               ],
+        "description": "Method Listing."
+    },
+    "->implode()": {
+        "prefix": "->implode()",
+        "body": [
+            "->implode();"
+        ],
+        "description": "Method Listing."
+    },
+    "->implode() For example": {
+        "prefix": "->implode() example",
+        "body": [
+            "\\$collection = collect([",
+            "    ['account_id' => 1, 'product' => 'Desk'],",
+            "    ['account_id' => 2, 'product' => 'Chair'],",
+            "]);",            
+            "\\$collection->implode('product', ', ');  " ,         
+            "// Desk, Chair"
+               ],
+        "description": "Method Listing."
+    },
+    "->intersect()": {
+        "prefix": "->intersect()",
+        "body": [
+            "->intersect();"
+        ],
+        "description": "Method Listing."
+    },
+    "->intersect() For example": {
+        "prefix": "->intersect() example",
+        "body": [
+            "\\$collection = collect(['Desk', 'Sofa', 'Chair']);",
+            "\\$intersect = \\$collection->intersect(['Desk', 'Chair', 'Bookcase']);"  ,          
+            "\\$intersect->all();  ",          
+            "// [0 => 'Desk', 2 => 'Chair']"
+               ],
+        "description": "Method Listing."
+    },
+    "->intersectByKeys()": {
+        "prefix": "->intersectByKeys()",
+        "body": [
+            "->intersectByKeys();"
+        ],
+        "description": "Method Listing."
+    },
+    "->intersectByKeys() For example": {
+        "prefix": "->intersectByKeys() example",
+        "body": [
+            "\\$collection = collect([",
+            "    'serial' => 'UX301', 'type' => 'screen', 'year' => 2009",
+            "]);",            
+            "\\$intersect = \\$collection->intersectByKeys([",
+            "    'reference' => 'UX404', 'type' => 'tab', 'year' => 2011",
+            "]);",            
+            "\\$intersect->all();" ,           
+            "// ['type' => 'screen', 'year' => 2009]"
+               ],
+        "description": "Method Listing."
+    },
+    "->isEmpty()": {
+        "prefix": "->isEmpty()",
+        "body": [
+            "->isEmpty();"
+        ],
+        "description": "Method Listing."
+    },
+    "->isEmpty() For example": {
+        "prefix": "->isEmpty() example",
+        "body": [
+            "collect([])->isEmpty();",
+            "    // true"
+               ],
+        "description": "Method Listing."
+    },
+    "->isNotEmpty()": {
+        "prefix": "->isNotEmpty()",
+        "body": [
+            "->isNotEmpty();"
+        ],
+        "description": "Method Listing."
+    },
+    "->isNotEmpty() For example": {
+        "prefix": "->isNotEmpty() example",
+        "body": [
+            "collect([])->isNotEmpty();",
+            "    // false"
+               ],
+        "description": "Method Listing."
+    },
+    "->keyBy()": {
+        "prefix": "->keyBy()",
+        "body": [
+            "->keyBy();"
+        ],
+        "description": "Method Listing."
+    },
+    "->keyBy() For example": {
+        "prefix": "->keyBy() example",
+        "body": [
+            "\\$collection = collect([",
+            "    ['product_id' => 'prod-100', 'name' => 'Desk'],",
+            "    ['product_id' => 'prod-200', 'name' => 'Chair'],",
+            "]);  " ,         
+            "\\$keyed = \\$collection->keyBy('product_id');" ,           
+            "\\$keyed->all(); ",           
+            "/*",
+            "    [",
+            "        'prod-100' => ['product_id' => 'prod-100', 'name' => 'Desk'],",
+            "        'prod-200' => ['product_id' => 'prod-200', 'name' => 'Chair'],",
+            "    ]",
+            "*/"
+               ],
+        "description": "Method Listing."
+    },
+    "->keys()": {
+        "prefix": "->keys()",
+        "body": [
+            "->keys();"
+        ],
+        "description": "Method Listing."
+    },
+    "->keys() For example": {
+        "prefix": "->keys() example",
+        "body": [
+            "\\$collection = collect([",
+            "    'prod-100' => ['product_id' => 'prod-100', 'name' => 'Desk'],",
+            "    'prod-200' => ['product_id' => 'prod-200', 'name' => 'Chair'],",
+            "]); " ,          
+            "\\$keys = \\$collection->keys(); "  ,         
+            "\\$keys->all();   "  ,       
+            "// ['prod-100', 'prod-200']"
+               ],
+        "description": "Method Listing."
+    },
+    "->last()": {
+        "prefix": "->last()",
+        "body": [
+            "->last();"
+        ],
+        "description": "Method Listing."
+    },
+    "->last() For example": {
+        "prefix": "->last() example",
+        "body": [
+            "collect([1, 2, 3, 4])->last(function (\\$value, \\$key) {",
+            "    return $value < 3;",
+            "});" ,           
+            "// 2"
+               ],
+        "description": "Method Listing."
+    },
+    "->macro()": {
+        "prefix": "->macro()",
+        "body": [
+            "->macro();"
+        ],
+        "description": "Method Listing."
+    },
+    "->make() For example": {
+        "prefix": "->make()",
+        "body": [
+            "->make();"
+               ],
+        "description": "Method Listing."
+    },
+    "->map()": {
+        "prefix": "->map()",
+        "body": [
+            "->map();"
+        ],
+        "description": "Method Listing."
+    },
+    "->map() For example": {
+        "prefix": "->map() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5]);",
+            "\\$multiplied = \\$collection->map(function (\\$item, \\$key) {",
+            "    return $item * 2;",
+            "});",
+            "\\$multiplied->all();",
+            "// [2, 4, 6, 8, 10]"
+               ],
+        "description": "Method Listing."
+    },
+    "->mapInto()": {
+        "prefix": "->mapInto()",
+        "body": [
+            "->mapInto();"
+        ],
+        "description": "Method Listing."
+    },
+    "->mapSpread()": {
+        "prefix": "->mapSpread()",
+        "body": [
+            "->mapSpread();"
+        ],
+        "description": "Method Listing."
+    },
+    "->mapSpread() For example": {
+        "prefix": "->mapSpread() example",
+        "body": [
+            "\\$collection = collect([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);",
+            "\\$chunks = \\$collection->chunk(2);",
+            "\\$sequence = \\$chunks->mapSpread(function (\\$odd, \\$even) {",
+            "    return \\$odd + \\$even;",
+            "});",
+            "\\$sequence->all();",
+            "// [1, 5, 9, 13, 17]"
+               ],
+        "description": "Method Listing."
+    },
+    "->mapToGroups()": {
+        "prefix": "->mapToGroups()",
+        "body": [
+            "->mapToGroups();"
+        ],
+        "description": "Method Listing."
+    },
+    "->mapToGroups() For example": {
+        "prefix": "->mapToGroups() example",
+        "body": [
+            "\\$collection = collect([",
+            "    [",
+            "        'name' => 'John Doe',",
+            "        'department' => 'Sales',",
+            "    ],",
+            "    [",
+            "        'name' => 'Jane Doe'",
+            "        'department' => 'Sales',",
+            "    ],",
+            "    [",
+            "        'name' => 'Johnny Doe',",
+            "        'department' => 'Marketing',",
+            "    ]",
+            "]);",
+            "\\$grouped = \\$collection->mapToGroups(function (\\$item, \\$key) {",
+            "    return [\\$item['department'] => \\$item['name']];",
+            "});",            
+            "\\$grouped->toArray();",          
+            "/*",
+            "    [",
+            "        'Sales' => ['John Doe', 'Jane Doe'],",
+            "        'Marketing' => ['Johhny Doe'],",
+            "    ]",
+            "*/ ",         
+            "\\$grouped->get('Sales')->all(); " ,          
+            "// ['John Doe', 'Jane Doe']"
+               ],
+        "description": "Method Listing."
+    },
+    "->mapWithKeys()": {
+        "prefix": "->mapWithKeys()",
+        "body": [
+            "->mapWithKeys();"
+        ],
+        "description": "Method Listing."
+    },
+    "->mapWithKeys() For example": {
+        "prefix": "->mapWithKeys() example",
+        "body": [
+            "\\$collection = collect([",
+            "    [",
+            "        'name' => 'John',",
+            "        'department' => 'Sales',",
+            "        'email' => 'john@example.com'",
+            "    ],",
+            "    [",
+            "        'name' => 'Jane',",
+            "        'department' => 'Marketing',",
+            "        'email' => 'jane@example.com'",
+            "    ]",
+            "]);",
+            "\\$keyed = \\$collection->mapWithKeys(function (\\$item) {",
+            "    return [\\$item['email'] => \\$item['name']];",
+            "}); ",
+            "\\$keyed->all(); " ,          
+            "/*",
+            "    [",
+            "        'john@example.com' => 'John',",
+            "        'jane@example.com' => 'Jane',",
+            "    ]",
+            "*/"
+               ],
+        "description": "Method Listing."
+    },
+    "->max()": {
+        "prefix": "->max()",
+        "body": [
+            "->max();"
+        ],
+        "description": "Method Listing."
+    },
+    "->max() For example": {
+        "prefix": "->max() example",
+        "body": [
+            "\\$max = collect([['foo' => 10], ['foo' => 20]])->max('foo');",
+            "// 20",
+            "\\$max = collect([1, 2, 3, 4, 5])->max();",
+            "// 5"
+               ],
+        "description": "Method Listing."
+    },
+    "->median()": {
+        "prefix": "->median()",
+        "body": [
+            "->median();"
+        ],
+        "description": "Method Listing."
+    },
+    "->median() For example": {
+        "prefix": "->median() example",
+        "body": [
+            "\\$median = collect([['foo' => 10], ['foo' => 10], ['foo' => 20], ['foo' => 40]])->median('foo');",
+            "// 15",
+            "\\$median = collect([1, 1, 2, 4])->median();",
+            "// 1.5"
+               ],
+        "description": "Method Listing."
+    },
+    "->merge()": {
+        "prefix": "->merge()",
+        "body": [
+            "->merge();"
+        ],
+        "description": "Method Listing."
+    },
+    "->merge() For example": {
+        "prefix": "->merge() example",
+        "body": [
+            "\\$collection = collect(['product_id' => 1, 'price' => 100]);",
+            "\\$merged = \\$collection->merge(['price' => 200, 'discount' => false]);",
+            "\\$merged->all();",
+            "// ['product_id' => 1, 'price' => 200, 'discount' => false]"
+               ],
+        "description": "Method Listing."
+    },
+    "->min()": {
+        "prefix": "->min()",
+        "body": [
+            "->min();"
+        ],
+        "description": "Method Listing."
+    },
+    "->min() For example": {
+        "prefix": "->min() example",
+        "body": [
+            "\\$min = collect([['foo' => 10], ['foo' => 20]])->min('foo');",
+            "// 10",
+            "\\$min = collect([1, 2, 3, 4, 5])->min();",
+            "// 1"
+               ],
+        "description": "Method Listing."
+    },
+    "->mode()": {
+        "prefix": "->mode()",
+        "body": [
+            "->mode();"
+        ],
+        "description": "Method Listing."
+    },
+    "->mode() For example": {
+        "prefix": "->mode() example",
+        "body": [
+            "\\$mode = collect([['foo' => 10], ['foo' => 10], ['foo' => 20], ['foo' => 40]])->mode('foo');",
+            "// [10]",
+            "\\$mode = collect([1, 1, 2, 4])->mode();",
+            "// [1]"
+               ],
+        "description": "Method Listing."
+    },
+    "->nth()": {
+        "prefix": "->nth()",
+        "body": [
+            "->nth();"
+        ],
+        "description": "Method Listing."
+    },
+    "->nth() For example": {
+        "prefix": "->nth() example",
+        "body": [
+            "\\$collection = collect(['a', 'b', 'c', 'd', 'e', 'f']);",
+            "\\$collection->nth(4);",
+            "// ['a', 'e']"
+               ],
+        "description": "Method Listing."
+    },
+    "->only()": {
+        "prefix": "->only()",
+        "body": [
+            "->only();"
+        ],
+        "description": "Method Listing."
+    },
+    "->only() For example": {
+        "prefix": "->only() example",
+        "body": [
+            "\\$collection = collect(['product_id' => 1, 'name' => 'Desk', 'price' => 100, 'discount' => false]);",
+            "\\$filtered = \\$collection->only(['product_id', 'name']);",
+            "\\$filtered->all();",
+            "// ['product_id' => 1, 'name' => 'Desk']"
+               ],
+        "description": "Method Listing."
+    },
+    "->pad()": {
+        "prefix": "->pad()",
+        "body": [
+            "->pad();"
+        ],
+        "description": "Method Listing."
+    },
+    "->pad() For example": {
+        "prefix": "->pad() example",
+        "body": [
+            "\\$collection = collect(['A', 'B', 'C']);",
+            "\\$filtered = \\$collection->pad(5, 0);",
+            "\\$filtered->all();",
+            "// ['A', 'B', 'C', 0, 0]",
+            "\\$filtered = \\$collection->pad(-5, 0);",
+            "\\$filtered->all();",
+            "// [0, 0, 'A', 'B', 'C']"
+               ],
+        "description": "Method Listing."
+    },
+    "->partition()": {
+        "prefix": "->partition()",
+        "body": [
+            "->partition();"
+        ],
+        "description": "Method Listing."
+    },
+    "->partition() For example": {
+        "prefix": "->partition() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5, 6]);",
+            "list(\\$underThree, \\$aboveThree) = \\$collection->partition(function (\\$i) {",
+            "    return \\$i < 3;",
+            "});",
+            "\\$underThree->all();",
+            "// [1, 2]",
+            "\\$aboveThree->all();",
+            "// [3, 4, 5, 6]"
+               ],
+        "description": "Method Listing."
+    },
+    "->pipe()": {
+        "prefix": "->pipe()",
+        "body": [
+            "->pipe();"
+        ],
+        "description": "Method Listing."
+    },
+    "->pipe() For example": {
+        "prefix": "->pipe() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3]);",
+            "\\$piped = \\$collection->pipe(function (\\$collection) {",
+            "    return $collection->sum();",
+            "}); ",
+            "// 6"
+               ],
+        "description": "Method Listing."
+    },
+    "->pluck()": {
+        "prefix": "->pluck()",
+        "body": [
+            "->pluck();"
+        ],
+        "description": "Method Listing."
+    },
+    "->pluck() For example": {
+        "prefix": "->pluck() example",
+        "body": [
+            "\\$collection = collect([",
+            "    ['product_id' => 'prod-100', 'name' => 'Desk'],",
+            "    ['product_id' => 'prod-200', 'name' => 'Chair'],",
+            "]);",            
+            "\\$plucked = \\$collection->pluck('name');",            
+            "\\$plucked->all(); ",           
+            "// ['Desk', 'Chair']"
+               ],
+        "description": "Method Listing."
+    },
+    "->pop()": {
+        "prefix": "->pop()",
+        "body": [
+            "->pop();"
+        ],
+        "description": "Method Listing."
+    },
+    "->pop() For example": {
+        "prefix": "->pop() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5]);",
+            "\\$collection->pop();",
+            "// 5",
+            "\\$collection->all();",
+            "// [1, 2, 3, 4]"
+               ],
+        "description": "Method Listing."
+    },
+    "->prepend()": {
+        "prefix": "->prepend()",
+        "body": [
+            "->prepend();"
+        ],
+        "description": "Method Listing."
+    },
+    "->prepend() For example": {
+        "prefix": "->prepend() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5]);",
+            "\\$collection->prepend(0);",
+            "\\$collection->all();",
+            "// [0, 1, 2, 3, 4, 5]"
+               ],
+        "description": "Method Listing."
+    },
+    "->pull()": {
+        "prefix": "->pull()",
+        "body": [
+            "->pull();"
+        ],
+        "description": "Method Listing."
+    },
+    "->pull() For example": {
+        "prefix": "->pull() example",
+        "body": [
+            "\\$collection = collect(['product_id' => 'prod-100', 'name' => 'Desk']);",
+            "\\$collection->pull('name');",
+            "// 'Desk'",
+            "\\$collection->all();",
+            "// ['product_id' => 'prod-100']"
+               ],
+        "description": "Method Listing."
+    },
+    "->push()": {
+        "prefix": "->push()",
+        "body": [
+            "->push();"
+        ],
+        "description": "Method Listing."
+    },
+    "->push() For example": {
+        "prefix": "->push() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4]);",
+            "\\$collection->push(5);",
+            "\\$collection->all();",
+            "// [1, 2, 3, 4, 5]"
+               ],
+        "description": "Method Listing."
+    },
+    "->put()": {
+        "prefix": "->put()",
+        "body": [
+            "->put();"
+        ],
+        "description": "Method Listing."
+    },
+    "->put() For example": {
+        "prefix": "->put() example",
+        "body": [
+            "\\$collection = collect(['product_id' => 1, 'name' => 'Desk']);",
+            "\\$collection->put('price', 100);",
+            "\\$collection->all();",
+            "// ['product_id' => 1, 'name' => 'Desk', 'price' => 100]"
+               ],
+        "description": "Method Listing."
+    },
+    "->random()": {
+        "prefix": "->random()",
+        "body": [
+            "->random();"
+        ],
+        "description": "Method Listing."
+    },
+    "->random() For example": {
+        "prefix": "->random() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5]);",
+            "\\$collection->random();",
+            "// 4 - (retrieved randomly)"
+               ],
+        "description": "Method Listing."
+    },
+    "->reduce()": {
+        "prefix": "->reduce()",
+        "body": [
+            "->reduce();"
+        ],
+        "description": "Method Listing."
+    },
+    "->reduce() For example": {
+        "prefix": "->reduce() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3]);",
+            "\\$total = \\$collection->reduce(function (\\$carry, \\$item) {",
+            "    return \\$carry + \\$item;",
+            "}); ",
+            "// 6"
+               ],
+        "description": "Method Listing."
+    },
+    "->reject()": {
+        "prefix": "->reject()",
+        "body": [
+            "->reject();"
+        ],
+        "description": "Method Listing."
+    },
+    "->reject() For example": {
+        "prefix": "->reject() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4]);",
+            "\\$filtered = \\$collection->reject(function (\\$value, \\$key) {",
+            "    return $value > 2;",
+            "});",
+            "\\$filtered->all();",
+            "// [1, 2]"
+               ],
+        "description": "Method Listing."
+    },
+    "->reverse()": {
+        "prefix": "->reverse()",
+        "body": [
+            "->reverse();"
+        ],
+        "description": "Method Listing."
+    },
+    "->reverse() For example": {
+        "prefix": "->reverse() example",
+        "body": [
+            "\\$collection = collect(['a', 'b', 'c', 'd', 'e']);",
+            "\\$reversed = \\$collection->reverse();",
+            "\\$reversed->all();",
+            "/*",
+            "    [",
+            "        4 => 'e',",
+            "        3 => 'd',",
+            "        2 => 'c',",
+            "        1 => 'b',",
+            "        0 => 'a',",
+            "    ]",
+            "*/"
+               ],
+        "description": "Method Listing."
+    },
+    "->search()": {
+        "prefix": "->search()",
+        "body": [
+            "->search();"
+        ],
+        "description": "Method Listing."
+    },
+    "->search() For example": {
+        "prefix": "->search() example",
+        "body": [
+            "\\$collection = collect([2, 4, 6, 8]);",
+            "\\$collection->search(4);",
+            "// 1"
+               ],
+        "description": "Method Listing."
+    },
+    "->shift()": {
+        "prefix": "->shift()",
+        "body": [
+            "->shift();"
+        ],
+        "description": "Method Listing."
+    },
+    "->shift() For example": {
+        "prefix": "->shift() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5]);",
+            "\\$collection->shift();",
+            "// 1",
+            "\\$collection->all();",
+            "// [2, 3, 4, 5]"
+               ],
+        "description": "Method Listing."
+    },
+    "->shuffle()": {
+        "prefix": "->shuffle()",
+        "body": [
+            "->shuffle();"
+        ],
+        "description": "Method Listing."
+    },
+    "->shuffle() For example": {
+        "prefix": "->shuffle() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5]);",
+            "\\$shuffled = \\$collection->shuffle();",
+            "\\$shuffled->all();",
+            "// [3, 2, 5, 1, 4] - (generated randomly)"
+               ],
+        "description": "Method Listing."
+    },
+    "->slice()": {
+        "prefix": "->slice()",
+        "body": [
+            "->slice();"
+        ],
+        "description": "Method Listing."
+    },
+    "->slice() For example": {
+        "prefix": "->slice() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);",
+            "\\$slice = \\$collection->slice(4);",
+            "\\$slice->all();",
+            "// [5, 6, 7, 8, 9, 10]"
+               ],
+        "description": "Method Listing."
+    },
+    "->sort()": {
+        "prefix": "->sort()",
+        "body": [
+            "->sort();"
+        ],
+        "description": "Method Listing."
+    },
+    "->sort() For example": {
+        "prefix": "->sort() example",
+        "body": [
+            "\\$collection = collect([5, 3, 1, 2, 4]);",
+            "\\$sorted = \\$collection->sort();",
+            "\\$sorted->values()->all();",
+            "// [1, 2, 3, 4, 5]"
+               ],
+        "description": "Method Listing."
+    },
+    "->sortBy()": {
+        "prefix": "->sortBy()",
+        "body": [
+            "->sortBy();"
+        ],
+        "description": "Method Listing."
+    },
+    "->sortBy() For example": {
+        "prefix": "->sortBy() example",
+        "body": [
+            "\\$collection = collect([",
+            "    ['name' => 'Desk', 'price' => 200],",
+            "    ['name' => 'Chair', 'price' => 100],",
+            "    ['name' => 'Bookcase', 'price' => 150],",
+            "]);",            
+            "\\$sorted = \\$collection->sortBy('price'); " ,          
+            "\\$sorted->values()->all();" ,           
+            "/*",
+            "    [",
+            "        ['name' => 'Chair', 'price' => 100],",
+            "        ['name' => 'Bookcase', 'price' => 150],",
+            "        ['name' => 'Desk', 'price' => 200],",
+            "    ]",
+            "*/"
+               ],
+        "description": "Method Listing."
+    },
+    "->sortByDesc()": {
+        "prefix": "->sortByDesc()",
+        "body": [
+            "->sortByDesc();"
+        ],
+        "description": "Method Listing."
+    },
+    "->sortKeys()": {
+        "prefix": "->sortKeys()",
+        "body": [
+            "->sortKeys();"
+        ],
+        "description": "Method Listing."
+    },
+    "->sortKeys() For example": {
+        "prefix": "->sortKeys() example",
+        "body": [
+            "\\$collection = collect([",
+            "    'id' => 22345,",
+            "    'first' => 'John',",
+            "    'last' => 'Doe',",
+            "]);  ",          
+            "\\$sorted = \\$collection->sortKeys();" ,           
+            "\\$sorted->all();  " ,         
+            "/*",
+            "    [",
+            "        'first' => 'John',",
+            "        'id' => 22345,",
+            "        'last' => 'Doe',",
+            "    ]",
+            "*/"
+               ],
+        "description": "Method Listing."
+    },
+    "->sortKeysDesc()": {
+        "prefix": "->sortKeysDesc()",
+        "body": [
+            "->sortKeysDesc();"
+        ],
+        "description": "Method Listing."
+    },
+    "->splice()": {
+        "prefix": "->splice()",
+        "body": [
+            "->splice();"
+        ],
+        "description": "Method Listing."
+    },
+    "->splice() For example": {
+        "prefix": "->splice() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5]);",
+            "\\$chunk = \\$collection->splice(2);",
+            "\\$chunk->all();",
+            "// [3, 4, 5]",
+            "\\$collection->all();",
+            "// [1, 2]"
+               ],
+        "description": "Method Listing."
+    },
+    "->split()": {
+        "prefix": "->split()",
+        "body": [
+            "->split();"
+        ],
+        "description": "Method Listing."
+    },
+    "->split() For example": {
+        "prefix": "->split() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5]);",
+            "\\$groups = \\$collection->split(3);",
+            "\\$groups->toArray();",
+            "// [[1, 2], [3, 4], [5]]"
+               ],
+        "description": "Method Listing."
+    },
+    "->sum()": {
+        "prefix": "->sum()",
+        "body": [
+            "->sum();"
+        ],
+        "description": "Method Listing."
+    },
+    "->sum() For example": {
+        "prefix": "->sum() example",
+        "body": [
+                "\\$collection = collect([",
+                "    ['name' => 'JavaScript: The Good Parts', 'pages' => 176],",
+                "    ['name' => 'JavaScript: The Definitive Guide', 'pages' => 1096],",
+                "]);",            
+                "\\$collection->sum('pages');" ,           
+                "// 1272",
+
+                "\\$collection = collect([",
+                "    ['name' => 'Chair', 'colors' => ['Black']],",
+                "    ['name' => 'Desk', 'colors' => ['Black', 'Mahogany']],",
+                "    ['name' => 'Bookcase', 'colors' => ['Red', 'Beige', 'Brown']],",
+                "]);",
+                
+                "\\$collection->sum(function (\\$product) {",
+                "    return count(\\$product['colors']);",
+                "});",
+                "// 6"
+               ],
+        "description": "Method Listing."
+    },
+    "->take()": {
+        "prefix": "->take()",
+        "body": [
+            "->take();"
+        ],
+        "description": "Method Listing."
+    },
+    "->take() For example": {
+        "prefix": "->take() example",
+        "body": [
+            "\\$collection = collect([0, 1, 2, 3, 4, 5]);",
+            "\\$chunk = \\$collection->take(3);",
+            "\\$chunk->all();",
+            "// [0, 1, 2]",
+            "\\$collection = collect([0, 1, 2, 3, 4, 5]);",
+            "\\$chunk = \\$collection->take(-2);",
+            "\\$chunk->all();",
+            "// [4, 5]"
+               ],
+        "description": "Method Listing."
+    },
+    "->tap()": {
+        "prefix": "->tap()",
+        "body": [
+            "->tap();"
+        ],
+        "description": "Method Listing."
+    },
+    "->tap() For example": {
+        "prefix": "->tap() example",
+        "body": [
+            "collect([2, 4, 3, 1, 5])",
+            "    ->sort()",
+            "    ->tap(function (\\$collection) {",
+            "        Log::debug('Values after sorting', \\$collection->values()->toArray());",
+            "    })",
+            "    ->shift();",
+            "// 1"
+               ],
+        "description": "Method Listing."
+    },
+    "->times()": {
+        "prefix": "->times()",
+        "body": [
+            "->times();"
+        ],
+        "description": "Method Listing."
+    },
+    "->times() For example": {
+        "prefix": "->times() example",
+        "body": [
+            "\\$collection = Collection::times(10, function (\\$number) {",
+            "    return \\$number * 9;",
+            "});",            
+            "\\$collection->all();",            
+            "// [9, 18, 27, 36, 45, 54, 63, 72, 81, 90]"
+               ],
+        "description": "Method Listing."
+    },
+    "->toArray()": {
+        "prefix": "->toArray()",
+        "body": [
+            "->toArray();"
+        ],
+        "description": "Method Listing."
+    },
+    "->toArray() For example": {
+        "prefix": "->toArray() example",
+        "body": [
+            "\\$collection = collect(['name' => 'Desk', 'price' => 200]);",
+            "\\$collection->toArray();",
+            "/*",
+            "    [",
+            "        ['name' => 'Desk', 'price' => 200],",
+            "    ]",
+            "*/"
+               ],
+        "description": "Method Listing."
+    },
+    "->toJson()": {
+        "prefix": "->toJson()",
+        "body": [
+            "->toJson();"
+        ],
+        "description": "Method Listing."
+    },
+    "->toJson() For example": {
+        "prefix": "->toJson() example",
+        "body": [
+            "\\$collection = collect(['name' => 'Desk', 'price' => 200]);",
+            "\\$collection->toJson();",
+            "// '{\"name\":\"Desk\", \"price\":200}'"
+               ],
+        "description": "Method Listing."
+    },
+    "->transform()": {
+        "prefix": "->transform()",
+        "body": [
+            "->transform();"
+        ],
+        "description": "Method Listing."
+    },
+    "->transform() For example": {
+        "prefix": "->transform() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3, 4, 5]);",
+            "\\$collection->transform(function (\\$item, \\$key) {",
+            "        return \\$item * 2;",
+            "});",
+            "\\$collection->all();",
+            "// [2, 4, 6, 8, 10]"
+               ],
+        "description": "Method Listing."
+    },
+    "->union()": {
+        "prefix": "->union()",
+        "body": [
+            "->union();"
+        ],
+        "description": "Method Listing."
+    },
+    "->union() For example": {
+        "prefix": "->union() example",
+        "body": [
+            "\\$collection = collect([1 => ['a'], 2 => ['b']]);",
+            "\\$union = \\$collection->union([3 => ['c'], 1 => ['b']]);",
+            "\\$union->all();",
+            "// [1 => ['a'], 2 => ['b'], 3 => ['c']]"
+               ],
+        "description": "Method Listing."
+    },
+    "->unique()": {
+        "prefix": "->unique()",
+        "body": [
+            "->unique();"
+        ],
+        "description": "Method Listing."
+    },
+    "->unique() For example": {
+        "prefix": "->unique() example",
+        "body": [
+            "\\$collection = collect([1, 1, 2, 2, 3, 4, 2]);",
+            "\\$unique = \\$collection->unique();",
+            "\\$unique->values()->all();",
+            "// [1, 2, 3, 4]"
+               ],
+        "description": "Method Listing."
+    },
+    "->uniqueStrict()": {
+        "prefix": "->uniqueStrict()",
+        "body": [
+            "->uniqueStrict();"
+        ],
+        "description": "Method Listing."
+    },
+    "->unless()": {
+        "prefix": "->unless()",
+        "body": [
+            "->unless();"
+        ],
+        "description": "Method Listing."
+    },
+    "->unless() For example": {
+        "prefix": "->unless() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3]);",
+            "\\$collection->unless(true, function (\\$collection) {",
+            "    return \\$collection->push(4);",
+            "});",
+            "\\$collection->unless(false, function (\\$collection) {",
+            "    return \\$collection->push(5);",
+            "});",
+            "\\$collection->all();",
+            "// [1, 2, 3, 5]"
+               ],
+        "description": "Method Listing."
+    },
+    "->unwrap()": {
+        "prefix": "->unwrap()",
+        "body": [
+            "->unwrap();"
+        ],
+        "description": "Method Listing."
+    },
+    "->unwrap() For example": {
+        "prefix": "->unwrap() example",
+        "body": [
+            "Collection::unwrap(collect('John Doe'));",
+            "// ['John Doe']",
+            "Collection::unwrap(['John Doe']);",
+            "// ['John Doe']",
+            "Collection::unwrap('John Doe');",
+            "// 'John Doe'"
+               ],
+        "description": "Method Listing."
+    },
+    "->values()": {
+        "prefix": "->values()",
+        "body": [
+            "->values();"
+        ],
+        "description": "Method Listing."
+    },
+    "->values() For example": {
+        "prefix": "->values() example",
+        "body": [
+            "\\$collection = collect([",
+            "    10 => ['product' => 'Desk', 'price' => 200],",
+            "    11 => ['product' => 'Desk', 'price' => 200]",
+            "]);",            
+            "\\$values = \\$collection->values(); ",           
+            "\\$values->all();",            
+            "/*",
+            "    [",
+            "        0 => ['product' => 'Desk', 'price' => 200],",
+            "        1 => ['product' => 'Desk', 'price' => 200],",
+            "    ]",
+            "*/"
+               ],
+        "description": "Method Listing."
+    },
+    "->when()": {
+        "prefix": "->when()",
+        "body": [
+            "->when();"
+        ],
+        "description": "Method Listing."
+    },
+    "->when() For example": {
+        "prefix": "->when() example",
+        "body": [
+            "\\$collection = collect([1, 2, 3]);",
+            "\\$collection->when(true, function (\\$collection) {",
+            "    return \\$collection->push(4);",
+            "});",
+            "\\$collection->when(false, function (\\$collection) {",
+            "    return \\$collection->push(5);",
+            "});",
+            "\\$collection->all();",
+            "// [1, 2, 3, 4]"
+               ],
+        "description": "Method Listing."
+    },
+    "->where()": {
+        "prefix": "->where()",
+        "body": [
+            "->where();"
+        ],
+        "description": "Method Listing."
+    },
+    "->where() For example": {
+        "prefix": "->where() example",
+        "body": [
+            "\\$collection = collect([",
+            "    ['product' => 'Desk', 'price' => 200],",
+            "    ['product' => 'Chair', 'price' => 100],",
+            "    ['product' => 'Bookcase', 'price' => 150],",
+            "    ['product' => 'Door', 'price' => 100],",
+            "]);",            
+            "\\$filtered = \\$collection->where('price', 100);",            
+            "\\$filtered->all();" ,           
+            "/*",
+            "    [",
+            "        ['product' => 'Chair', 'price' => 100],",
+            "        ['product' => 'Door', 'price' => 100],",
+            "    ]",
+            "*/"
+               ],
+        "description": "Method Listing."
+    },
+    "->whereStrict()": {
+        "prefix": "->whereStrict()",
+        "body": [
+            "->whereStrict();"
+        ],
+        "description": "Method Listing."
+    },
+    "->whereIn()": {
+        "prefix": "->whereIn()",
+        "body": [
+            "->whereIn();"
+        ],
+        "description": "Method Listing."
+    },
+    "->whereIn() For example": {
+        "prefix": "->whereIn() example",
+        "body": [
+            "\\$collection = collect([",
+            "    ['product' => 'Desk', 'price' => 200],",
+            "    ['product' => 'Chair', 'price' => 100],",
+            "    ['product' => 'Bookcase', 'price' => 150],",
+            "    ['product' => 'Door', 'price' => 100],",
+            "]); " ,          
+            "\\$filtered = \\$collection->whereIn('price', [150, 200]); " ,          
+            "\\$filtered->all(); ",           
+            "/*",
+            "    [",
+            "        ['product' => 'Bookcase', 'price' => 150],",
+            "        ['product' => 'Desk', 'price' => 200],",
+            "    ]",
+            "*/"
+               ],
+        "description": "Method Listing."
+    },
+    "->whereInStrict()": {
+        "prefix": "->whereInStrict()",
+        "body": [
+            "->whereInStrict();"
+        ],
+        "description": "Method Listing."
+    },
+    "->whereInstanceOf()": {
+        "prefix": "->whereInstanceOf()",
+        "body": [
+            "->whereInstanceOf();"
+        ],
+        "description": "Method Listing."
+    },
+    "->whereInstanceOf() For example": {
+        "prefix": "->whereInstanceOf() example",
+        "body": [
+            "\\$collection = collect([",
+            "    new User,",
+            "    new User,",
+            "    new Post,",
+            "]);",
+            "return \\$collection->whereInstanceOf(User::class);"
+               ],
+        "description": "Method Listing."
+    },
+    "->whereNotIn()": {
+        "prefix": "->whereNotIn()",
+        "body": [
+            "->whereNotIn();"
+        ],
+        "description": "Method Listing."
+    },
+    "->whereNotIn() For example": {
+        "prefix": "->whereNotIn() example",
+        "body": [
+            "\\$collection = collect([",
+            "    ['product' => 'Desk', 'price' => 200],",
+            "    ['product' => 'Chair', 'price' => 100],",
+            "    ['product' => 'Bookcase', 'price' => 150],",
+            "    ['product' => 'Door', 'price' => 100],",
+            "]);", 
+            "\\$filtered = \\$collection->whereNotIn('price', [150, 200]); " ,          
+            "\\$filtered->all();",            
+            "/*",
+            "    [",
+            "        ['product' => 'Chair', 'price' => 100],",
+            "        ['product' => 'Door', 'price' => 100],",
+            "    ]",
+            "*/"
+               ],
+        "description": "Method Listing."
+    },
+    "->whereNotInStrict()": {
+        "prefix": "->whereNotInStrict()",
+        "body": [
+            "->whereNotInStrict();"
+        ],
+        "description": "Method Listing."
+    },
+    "->wrap()": {
+        "prefix": "->wrap()",
+        "body": [
+            "->wrap();"
+        ],
+        "description": "Method Listing."
+    },
+    "->wrap() For example": {
+        "prefix": "->wrap() example",
+        "body": [
+            "\\$collection = Collection::wrap('John Doe');",
+            "\\$collection->all();",
+            "// ['John Doe']",
+            "\\$collection = Collection::wrap(['John Doe']);",
+            "\\$collection->all();",
+            "// ['John Doe']",
+            "\\$collection = Collection::wrap(collect('John Doe'));",
+            "\\$collection->all();",
+            "// ['John Doe']"
+               ],
+        "description": "Method Listing."
+    },
+    "->zip()": {
+        "prefix": "->zip()",
+        "body": [
+            "->zip();"
+        ],
         "description": "Method Listing."
     }
 }
