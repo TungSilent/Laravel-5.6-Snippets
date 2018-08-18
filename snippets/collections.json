@@ -1757,5 +1757,19 @@
             ">zip();"
         ],
         "description": "Method Listing."
+    },
+    "->limit()": {
+        "prefix": "->limit(10)",
+        "body": [
+            ">limit(10);"
+        ],
+        "description": "Method Listing."
+    },
+    "limit()": {
+        "prefix": "limit(10)",
+        "body": [
+            "limit(10);"
+        ],
+        "description": "Method Listing."
     }
 }

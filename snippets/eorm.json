@@ -377,5 +377,19 @@
             "::find();"
         ],
         "description": "Permanently Models."
+    },
+    "App\\Flight::orderBy()": {
+        "prefix": "App\\Flight::orderBy('id', 'DESC')",
+        "body": [
+            "App\\Flight::orderBy('id', 'DESC');"
+        ],
+        "description": "Soft Models."
+    },
+    "::orderBy()": {
+        "prefix": "::orderBy('id', 'DESC')",
+        "body": [
+            "::orderBy('id', 'DESC');"
+        ],
+        "description": "Soft Models."
     }
 }

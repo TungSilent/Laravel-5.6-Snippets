@@ -70,5 +70,12 @@
             "DB::table('${1:users}')$2"
         ],
         "description": "Retrieving rows from a table"
+    },
+    "DB-raw": {
+        "prefix": "DB::raw('RAND()')",
+        "body": [
+            "DB::raw('RAND()')"
+        ],
+        "description": "Ranroom"
     }
 }
