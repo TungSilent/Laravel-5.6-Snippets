@@ -391,5 +391,19 @@
             "::orderBy('id', 'DESC');"
         ],
         "description": "Soft Models."
+    },
+    "App\\Flight::with()": {
+        "prefix": "App\\Flight::with()",
+        "body": [
+            "App\\Flight::with();"
+        ],
+        "description": "Models."
+    },
+    "::with()": {
+        "prefix": "::with()",
+        "body": [
+            "::with();"
+        ],
+        "description": "Models."
     }
 }
