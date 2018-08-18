@@ -54,7 +54,7 @@ Please file any [issues](https://github.com/TungSilent/Laravel-5.6-Snippets/issu
 
 ## Credits
 
-* Snippets based on [Laravel 5 Snippets for Sublime Text](https://github.com/onecentlin/laravel5-snippets-vscode)
+* Snippets based on [Laravel 5 Snippets](https://github.com/onecentlin/laravel5-snippets-vscode)
 
 ## License
 
