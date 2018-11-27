@@ -2,25 +2,25 @@
     "->all()": {
         "prefix": "->all()",
         "body": [
-            ">all();"            
+            "->all();"            
         ],
         "description": "Method Listing."
     },"->avg()": {
         "prefix": "->avg()",
         "body": [
-            ">avg();"
+            "->avg();"
         ],
         "description": "Method Listing."
     },"->chunk(1)": {
         "prefix": "->chunk(1)",
         "body": [
-            ">chunk(1);"
+            "->chunk(1);"
         ],
         "description": "Method Listing."
     },"->collapse()": {
         "prefix": "->collapse()",
         "body": [
-            ">collapse();"
+            "->collapse();"
         ],
         "description": "Method Listing."
     },"->collapse() For example": {
@@ -35,7 +35,7 @@
     },"->combine(['George', 29])": {
         "prefix": "->combine()",
         "body": [
-            ">combine();"
+            "->combine();"
         ],
         "description": "Method Listing."
     },"->combine(['George', 29]) For example": {
@@ -50,7 +50,7 @@
     },"->concat(['name' => 'Johnny Doe'])": {
         "prefix": "->concat()",
         "body": [
-            ">concat();"
+            "->concat();"
         ],
         "description": "Method Listing."
     },"->concat(['name' => 'Johnny Doe']) For example": {
@@ -65,7 +65,7 @@
     },"->contains()": {
         "prefix": "->contains()",
         "body": [
-            ">contains();"
+            "->contains();"
         ],
         "description": "Method Listing."
     },"->contains() For example": {
@@ -82,14 +82,14 @@
     "->containsStrict()": {
         "prefix": "->containsStrict()",
         "body": [
-            ">containsStrict();"
+            "->containsStrict();"
         ],
         "description": "Method Listing."
     },
     "->count()": {
         "prefix": "->count()",
         "body": [
-            ">count();"
+            "->count();"
         ],
         "description": "Method Listing."
     },
@@ -105,7 +105,7 @@
     "->crossJoin()": {
         "prefix": "->crossJoin()",
         "body": [
-            ">crossJoin();"
+            "->crossJoin();"
         ],
         "description": "Method Listing."
     },
@@ -133,7 +133,7 @@
     "->dd()": {
         "prefix": "->dd()",
         "body": [
-            ">dd();"
+            "->dd();"
         ],
         "description": "Method Listing."
     },
@@ -156,7 +156,7 @@
     "->diff()": {
         "prefix": "->diff()",
         "body": [
-            ">diff();"
+            "->diff();"
         ],
         "description": "Method Listing."
     },
@@ -173,7 +173,7 @@
     "->diffAssoc()": {
         "prefix": "->diffAssoc()",
         "body": [
-            ">diffAssoc();"
+            "->diffAssoc();"
         ],
         "description": "Method Listing."
     },
@@ -199,7 +199,7 @@
     "->diffKeys()": {
         "prefix": "->diffKeys()",
         "body": [
-            ">diffKeys();"
+            "->diffKeys();"
         ],
         "description": "Method Listing."
     },
@@ -227,7 +227,7 @@
     "->dump()": {
         "prefix": "->dump()",
         "body": [
-            ">dump();"
+            "->dump();"
         ],
         "description": "Method Listing."
     },
@@ -250,7 +250,7 @@
     "->each()": {
         "prefix": "->each()",
         "body": [
-            ">each();"
+            "->each();"
         ],
         "description": "Method Listing."
     },
@@ -268,7 +268,7 @@
     "->eachSpread()": {
         "prefix": "->eachSpread()",
         "body": [
-            ">eachSpread();"
+            "->eachSpread();"
         ],
         "description": "Method Listing."
     },
@@ -285,7 +285,7 @@
     "->every()": {
         "prefix": "->every()",
         "body": [
-            ">every();"
+            "->every();"
         ],
         "description": "Method Listing."
     },
@@ -302,7 +302,7 @@
     "->except()": {
         "prefix": "->except()",
         "body": [
-            ">except();"
+            "->except();"
         ],
         "description": "Method Listing."
     },
@@ -319,7 +319,7 @@
     "->filter()": {
         "prefix": "->filter()",
         "body": [
-            ">filter();"
+            "->filter();"
         ],
         "description": "Method Listing."
     },
@@ -338,7 +338,7 @@
     "->first()": {
         "prefix": "->first()",
         "body": [
-            ">first();"
+            "->first();"
         ],
         "description": "Method Listing."
     },
@@ -355,7 +355,7 @@
     "->firstWhere()": {
         "prefix": "->firstWhere()",
         "body": [
-            ">firstWhere();"
+            "->firstWhere();"
         ],
         "description": "Method Listing."
     },
@@ -376,7 +376,7 @@
     "->flatMap()": {
         "prefix": "->flatMap()",
         "body": [
-            ">flatMap();"
+            "->flatMap();"
         ],
         "description": "Method Listing."
     },
@@ -399,7 +399,7 @@
     "->flatten()": {
         "prefix": "->flatten()",
         "body": [
-            ">flatten();"
+            "->flatten();"
         ],
         "description": "Method Listing."
     },
@@ -416,7 +416,7 @@
     "->flip()": {
         "prefix": "->flip()",
         "body": [
-            ">flip();"
+            "->flip();"
         ],
         "description": "Method Listing."
     },
@@ -433,7 +433,7 @@
     "->forPage()": {
         "prefix": "->forPage()",
         "body": [
-            ">forPage();"
+            "->forPage();"
         ],
         "description": "Method Listing."
     },
@@ -450,14 +450,14 @@
     "->get()": {
         "prefix": "->get()",
         "body": [
-            ">get();"
+            "->get();"
         ],
         "description": "Method Listing."
     },    
     "->groupBy()": {
         "prefix": "->groupBy()",
         "body": [
-            ">groupBy();"
+            "->groupBy();"
         ],
         "description": "Method Listing."
     },
@@ -488,7 +488,7 @@
     "->has()": {
         "prefix": "->has()",
         "body": [
-            ">has();"
+            "->has();"
         ],
         "description": "Method Listing."
     },
@@ -504,7 +504,7 @@
     "->implode()": {
         "prefix": "->implode()",
         "body": [
-            ">implode();"
+            "->implode();"
         ],
         "description": "Method Listing."
     },
@@ -523,7 +523,7 @@
     "->intersect()": {
         "prefix": "->intersect()",
         "body": [
-            ">intersect();"
+            "->intersect();"
         ],
         "description": "Method Listing."
     },
@@ -540,7 +540,7 @@
     "->intersectByKeys()": {
         "prefix": "->intersectByKeys()",
         "body": [
-            ">intersectByKeys();"
+            "->intersectByKeys();"
         ],
         "description": "Method Listing."
     },
@@ -561,7 +561,7 @@
     "->isEmpty()": {
         "prefix": "->isEmpty()",
         "body": [
-            ">isEmpty();"
+            "->isEmpty();"
         ],
         "description": "Method Listing."
     },
@@ -576,7 +576,7 @@
     "->isNotEmpty()": {
         "prefix": "->isNotEmpty()",
         "body": [
-            ">isNotEmpty();"
+            "->isNotEmpty();"
         ],
         "description": "Method Listing."
     },
@@ -591,7 +591,7 @@
     "->keyBy()": {
         "prefix": "->keyBy()",
         "body": [
-            ">keyBy();"
+            "->keyBy();"
         ],
         "description": "Method Listing."
     },
@@ -616,7 +616,7 @@
     "->keys()": {
         "prefix": "->keys()",
         "body": [
-            ">keys();"
+            "->keys();"
         ],
         "description": "Method Listing."
     },
@@ -636,7 +636,7 @@
     "->last()": {
         "prefix": "->last()",
         "body": [
-            ">last();"
+            "->last();"
         ],
         "description": "Method Listing."
     },
@@ -653,21 +653,21 @@
     "->macro()": {
         "prefix": "->macro()",
         "body": [
-            ">macro();"
+            "->macro();"
         ],
         "description": "Method Listing."
     },
     "->make() For example": {
         "prefix": "->make()",
         "body": [
-            ">make();"
+            "->make();"
                ],
         "description": "Method Listing."
     },
     "->map()": {
         "prefix": "->map()",
         "body": [
-            ">map();"
+            "->map();"
         ],
         "description": "Method Listing."
     },
@@ -686,14 +686,14 @@
     "->mapInto()": {
         "prefix": "->mapInto()",
         "body": [
-            ">mapInto();"
+            "->mapInto();"
         ],
         "description": "Method Listing."
     },
     "->mapSpread()": {
         "prefix": "->mapSpread()",
         "body": [
-            ">mapSpread();"
+            "->mapSpread();"
         ],
         "description": "Method Listing."
     },
@@ -713,7 +713,7 @@
     "->mapToGroups()": {
         "prefix": "->mapToGroups()",
         "body": [
-            ">mapToGroups();"
+            "->mapToGroups();"
         ],
         "description": "Method Listing."
     },
@@ -752,7 +752,7 @@
     "->mapWithKeys()": {
         "prefix": "->mapWithKeys()",
         "body": [
-            ">mapWithKeys();"
+            "->mapWithKeys();"
         ],
         "description": "Method Listing."
     },
@@ -787,7 +787,7 @@
     "->max()": {
         "prefix": "->max()",
         "body": [
-            ">max();"
+            "->max();"
         ],
         "description": "Method Listing."
     },
@@ -804,7 +804,7 @@
     "->median()": {
         "prefix": "->median()",
         "body": [
-            ">median();"
+            "->median();"
         ],
         "description": "Method Listing."
     },
@@ -821,7 +821,7 @@
     "->merge()": {
         "prefix": "->merge()",
         "body": [
-            ">merge();"
+            "->merge();"
         ],
         "description": "Method Listing."
     },
@@ -838,7 +838,7 @@
     "->min()": {
         "prefix": "->min()",
         "body": [
-            ">min();"
+            "->min();"
         ],
         "description": "Method Listing."
     },
@@ -855,7 +855,7 @@
     "->mode()": {
         "prefix": "->mode()",
         "body": [
-            ">mode();"
+            "->mode();"
         ],
         "description": "Method Listing."
     },
@@ -872,7 +872,7 @@
     "->nth()": {
         "prefix": "->nth()",
         "body": [
-            ">nth();"
+            "->nth();"
         ],
         "description": "Method Listing."
     },
@@ -888,7 +888,7 @@
     "->only()": {
         "prefix": "->only()",
         "body": [
-            ">only();"
+            "->only();"
         ],
         "description": "Method Listing."
     },
@@ -905,7 +905,7 @@
     "->pad()": {
         "prefix": "->pad()",
         "body": [
-            ">pad();"
+            "->pad();"
         ],
         "description": "Method Listing."
     },
@@ -925,7 +925,7 @@
     "->partition()": {
         "prefix": "->partition()",
         "body": [
-            ">partition();"
+            "->partition();"
         ],
         "description": "Method Listing."
     },
@@ -946,7 +946,7 @@
     "->pipe()": {
         "prefix": "->pipe()",
         "body": [
-            ">pipe();"
+            "->pipe();"
         ],
         "description": "Method Listing."
     },
@@ -964,7 +964,7 @@
     "->pluck()": {
         "prefix": "->pluck()",
         "body": [
-            ">pluck();"
+            "->pluck();"
         ],
         "description": "Method Listing."
     },
@@ -984,7 +984,7 @@
     "->pop()": {
         "prefix": "->pop()",
         "body": [
-            ">pop();"
+            "->pop();"
         ],
         "description": "Method Listing."
     },
@@ -1002,7 +1002,7 @@
     "->prepend()": {
         "prefix": "->prepend()",
         "body": [
-            ">prepend();"
+            "->prepend();"
         ],
         "description": "Method Listing."
     },
@@ -1019,7 +1019,7 @@
     "->pull()": {
         "prefix": "->pull()",
         "body": [
-            ">pull();"
+            "->pull();"
         ],
         "description": "Method Listing."
     },
@@ -1037,7 +1037,7 @@
     "->push()": {
         "prefix": "->push()",
         "body": [
-            ">push();"
+            "->push();"
         ],
         "description": "Method Listing."
     },
@@ -1054,7 +1054,7 @@
     "->put()": {
         "prefix": "->put()",
         "body": [
-            ">put();"
+            "->put();"
         ],
         "description": "Method Listing."
     },
@@ -1071,7 +1071,7 @@
     "->random()": {
         "prefix": "->random()",
         "body": [
-            ">random();"
+            "->random();"
         ],
         "description": "Method Listing."
     },
@@ -1087,7 +1087,7 @@
     "->reduce()": {
         "prefix": "->reduce()",
         "body": [
-            ">reduce();"
+            "->reduce();"
         ],
         "description": "Method Listing."
     },
@@ -1105,7 +1105,7 @@
     "->reject()": {
         "prefix": "->reject()",
         "body": [
-            ">reject();"
+            "->reject();"
         ],
         "description": "Method Listing."
     },
@@ -1124,7 +1124,7 @@
     "->reverse()": {
         "prefix": "->reverse()",
         "body": [
-            ">reverse();"
+            "->reverse();"
         ],
         "description": "Method Listing."
     },
@@ -1149,7 +1149,7 @@
     "->search()": {
         "prefix": "->search()",
         "body": [
-            ">search();"
+            "->search();"
         ],
         "description": "Method Listing."
     },
@@ -1165,7 +1165,7 @@
     "->shift()": {
         "prefix": "->shift()",
         "body": [
-            ">shift();"
+            "->shift();"
         ],
         "description": "Method Listing."
     },
@@ -1183,7 +1183,7 @@
     "->shuffle()": {
         "prefix": "->shuffle()",
         "body": [
-            ">shuffle();"
+            "->shuffle();"
         ],
         "description": "Method Listing."
     },
@@ -1200,7 +1200,7 @@
     "->slice()": {
         "prefix": "->slice()",
         "body": [
-            ">slice();"
+            "->slice();"
         ],
         "description": "Method Listing."
     },
@@ -1217,7 +1217,7 @@
     "->sort()": {
         "prefix": "->sort()",
         "body": [
-            ">sort();"
+            "->sort();"
         ],
         "description": "Method Listing."
     },
@@ -1234,7 +1234,7 @@
     "->sortBy()": {
         "prefix": "->sortBy()",
         "body": [
-            ">sortBy();"
+            "->sortBy();"
         ],
         "description": "Method Listing."
     },
@@ -1261,14 +1261,14 @@
     "->sortByDesc()": {
         "prefix": "->sortByDesc()",
         "body": [
-            ">sortByDesc();"
+            "->sortByDesc();"
         ],
         "description": "Method Listing."
     },
     "->sortKeys()": {
         "prefix": "->sortKeys()",
         "body": [
-            ">sortKeys();"
+            "->sortKeys();"
         ],
         "description": "Method Listing."
     },
@@ -1295,14 +1295,14 @@
     "->sortKeysDesc()": {
         "prefix": "->sortKeysDesc()",
         "body": [
-            ">sortKeysDesc();"
+            "->sortKeysDesc();"
         ],
         "description": "Method Listing."
     },
     "->splice()": {
         "prefix": "->splice()",
         "body": [
-            ">splice();"
+            "->splice();"
         ],
         "description": "Method Listing."
     },
@@ -1321,7 +1321,7 @@
     "->split()": {
         "prefix": "->split()",
         "body": [
-            ">split();"
+            "->split();"
         ],
         "description": "Method Listing."
     },
@@ -1338,7 +1338,7 @@
     "->sum()": {
         "prefix": "->sum()",
         "body": [
-            ">sum();"
+            "->sum();"
         ],
         "description": "Method Listing."
     },
@@ -1368,7 +1368,7 @@
     "->take()": {
         "prefix": "->take()",
         "body": [
-            ">take();"
+            "->take();"
         ],
         "description": "Method Listing."
     },
@@ -1389,7 +1389,7 @@
     "->tap()": {
         "prefix": "->tap()",
         "body": [
-            ">tap();"
+            "->tap();"
         ],
         "description": "Method Listing."
     },
@@ -1409,7 +1409,7 @@
     "->times()": {
         "prefix": "->times()",
         "body": [
-            ">times();"
+            "->times();"
         ],
         "description": "Method Listing."
     },
@@ -1427,7 +1427,7 @@
     "->toArray()": {
         "prefix": "->toArray()",
         "body": [
-            ">toArray();"
+            "->toArray();"
         ],
         "description": "Method Listing."
     },
@@ -1447,7 +1447,7 @@
     "->toJson()": {
         "prefix": "->toJson()",
         "body": [
-            ">toJson();"
+            "->toJson();"
         ],
         "description": "Method Listing."
     },
@@ -1463,7 +1463,7 @@
     "->transform()": {
         "prefix": "->transform()",
         "body": [
-            ">transform();"
+            "->transform();"
         ],
         "description": "Method Listing."
     },
@@ -1482,7 +1482,7 @@
     "->union()": {
         "prefix": "->union()",
         "body": [
-            ">union();"
+            "->union();"
         ],
         "description": "Method Listing."
     },
@@ -1499,7 +1499,7 @@
     "->unique()": {
         "prefix": "->unique()",
         "body": [
-            ">unique();"
+            "->unique();"
         ],
         "description": "Method Listing."
     },
@@ -1516,14 +1516,14 @@
     "->uniqueStrict()": {
         "prefix": "->uniqueStrict()",
         "body": [
-            ">uniqueStrict();"
+            "->uniqueStrict();"
         ],
         "description": "Method Listing."
     },
     "->unless()": {
         "prefix": "->unless()",
         "body": [
-            ">unless();"
+            "->unless();"
         ],
         "description": "Method Listing."
     },
@@ -1545,7 +1545,7 @@
     "->unwrap()": {
         "prefix": "->unwrap()",
         "body": [
-            ">unwrap();"
+            "->unwrap();"
         ],
         "description": "Method Listing."
     },
@@ -1564,7 +1564,7 @@
     "->values()": {
         "prefix": "->values()",
         "body": [
-            ">values();"
+            "->values();"
         ],
         "description": "Method Listing."
     },
@@ -1589,7 +1589,7 @@
     "->when()": {
         "prefix": "->when()",
         "body": [
-            ">when();"
+            "->when();"
         ],
         "description": "Method Listing."
     },
@@ -1611,7 +1611,7 @@
     "->where()": {
         "prefix": "->where()",
         "body": [
-            ">where();"
+            "->where();"
         ],
         "description": "Method Listing."
     },
@@ -1638,14 +1638,14 @@
     "->whereStrict()": {
         "prefix": "->whereStrict()",
         "body": [
-            ">whereStrict();"
+            "->whereStrict();"
         ],
         "description": "Method Listing."
     },
     "->whereIn()": {
         "prefix": "->whereIn()",
         "body": [
-            ">whereIn();"
+            "->whereIn();"
         ],
         "description": "Method Listing."
     },
@@ -1672,14 +1672,14 @@
     "->whereInStrict()": {
         "prefix": "->whereInStrict()",
         "body": [
-            ">whereInStrict();"
+            "->whereInStrict();"
         ],
         "description": "Method Listing."
     },
     "->whereInstanceOf()": {
         "prefix": "->whereInstanceOf()",
         "body": [
-            ">whereInstanceOf();"
+            "->whereInstanceOf();"
         ],
         "description": "Method Listing."
     },
@@ -1698,7 +1698,7 @@
     "->whereNotIn()": {
         "prefix": "->whereNotIn()",
         "body": [
-            ">whereNotIn();"
+            "->whereNotIn();"
         ],
         "description": "Method Listing."
     },
@@ -1725,14 +1725,14 @@
     "->whereNotInStrict()": {
         "prefix": "->whereNotInStrict()",
         "body": [
-            ">whereNotInStrict();"
+            "->whereNotInStrict();"
         ],
         "description": "Method Listing."
     },
     "->wrap()": {
         "prefix": "->wrap()",
         "body": [
-            ">wrap();"
+            "->wrap();"
         ],
         "description": "Method Listing."
     },
@@ -1754,14 +1754,14 @@
     "->zip()": {
         "prefix": "->zip()",
         "body": [
-            ">zip();"
+            "->zip();"
         ],
         "description": "Method Listing."
     },
     "->limit()": {
         "prefix": "->limit(10)",
         "body": [
-            ">limit(10);"
+            "->limit(10);"
         ],
         "description": "Method Listing."
     },
